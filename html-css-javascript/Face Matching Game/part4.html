@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Matching Game</title>
+    <style>
+        img {
+            position: absolute;
+        }
+
+        div {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+        }
+
+        #rightSide {
+            left: 500px;
+            border-left: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Matching Game</h1>
+    <p>Click on the extra smiling face on the left.</p>
+    <div id="leftSide">
+    </div>
+    <div id="rightSide">
+    </div>
+    <script>
+        //Matching game module starts
+        //Using revealing module pattern ( object oriented -> underlying complexity is hidden)
+        var matchingGameModule = (function () {
+
+            //using _ notation to denote they are private variables and cannot be altered from outside
+            //only accessible within the module
+            var _numberOfFaces = 5;
+            var _theLeftSide = document.getElementById("leftSide");
+            var _theRightSide = document.getElementById("rightSide");
+            var _theBody = document.getElementsByTagName("body")[0];
+
+            //private methods denoted by _
+
+            //cleans up the left side div dom content
+            function _cleanUpLeftSide() {
+                while (_theLeftSide.firstChild) {
+                    _theLeftSide.removeChild(_theLeftSide.firstChild);
+                }
+            };
+
+            //cleans up the right side div dom content
+            function _cleanUpRightSide() {
+                while (_theRightSide.firstChild) {
+                    _theRightSide.removeChild(_theRightSide.firstChild);
+                }
+            };
+
+
+            //This method performs the following operations
+            // a) Cloning the left side images
+            // b) Removing the last child in left side
+            // c) Copying it to the right side
+            // d) Attaching handlers to the lastchild of the left side div 
+            function _handleImageChanges() {
+
+
+                var _leftSideImages = _theLeftSide.cloneNode(true);
+                _leftSideImages.removeChild(_leftSideImages.lastChild);
+                _theRightSide.appendChild(_leftSideImages);
+
+
+                _theLeftSide.lastChild.onclick = function nextLevel(event) {
+                    event.stopPropagation();
+                    _numberOfFaces += 5;
+                    generateFaces();
+                }
+
+            };
+
+            //Attaches click handlers on the body
+            function _attachBodyEventHandler() {
+
+                _theBody.onclick = function gameOver() {
+                    alert("Game Over!");
+                    _theBody.onclick = null;
+                    _theLeftSide.lastChild.onclick = null;
+                }
+            };
+
+            //This method generates the images on the left side div for the game
+            function _generateImagesOnLeftSideDiv() {
+
+                for (i = 0; i < _numberOfFaces; ++i) {
+                    var _elem_img = document.createElement("img");
+                    _elem_img.src = "http://home.cse.ust.hk/~rossiter/mooc/matching_game/smile.png"
+                    //range of width and height [ 0 - 400] and hence length is 401
+                    _elem_img.style.top = Math.floor(Math.random() * 401) + "px";
+                    _elem_img.style.left = Math.floor(Math.random() * 401) + "px";
+                    _theLeftSide.appendChild(_elem_img);
+                }
+            };
+
+
+            function generateFaces() {
+
+                //Clean up left side
+                _cleanUpLeftSide();
+
+                //Clean up right side
+                _cleanUpRightSide();
+
+
+                //Generate images on left side div
+                _generateImagesOnLeftSideDiv();
+
+                //handle image manipulations on both sides div
+                _handleImageChanges();
+
+                //attach handlers
+                _attachBodyEventHandler();
+
+
+
+            };
+
+            return {
+
+                generateFaces: generateFaces
+            }
+
+        }());
+
+        matchingGameModule.generateFaces();
+
+    </script>
+</body>
+
+</html>
