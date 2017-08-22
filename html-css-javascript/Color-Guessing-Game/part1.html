@@ -1,0 +1,63 @@
+    <!DOCTYPE HTML>
+    <html>
+        <head>            
+        <meta name="description" content="Coursera Web tutorials">
+        <meta name="keywords" content="HTML,CSS,JavaScript">
+        <meta name="author" content="Soumya Mukhopadhyay">
+        </head>
+    <body onload="do_game()">
+        <script type="text/javascript" charset="utf-8">
+            
+            
+            //<--------------------- guessing game module -------------------------------------->
+            var guessingGameModule = (function(){
+
+                var colors = ["black", "blue", "brown", "cyan", "gold",
+                "green", "magenta", "orange", "pink", "red",
+                "silver", "violet", "yellow"];
+                
+                var isColorGuessedCorrectly = false;
+                
+                function _sortColors(){
+                    
+                    colors.sort();
+                };
+                
+                function guessColor(){
+                    
+                    _sortColors();
+                    
+                    var targetColorIndex = Math.floor(Math.random()*colors.length);
+                    
+                    //alert(colors[targetColorIndex]);
+                    
+                    while(!isColorGuessedCorrectly){
+                     
+                        guess_input = prompt(
+                        "I am thinking of one of these colors\n\n" + colors +
+                        "\n\nWhat color am I thinking of?"
+                        );
+                        
+                        isColorGuessedCorrectly = (guess_input === colors[targetColorIndex]);
+                    }
+                    
+                };
+                
+                
+                return{
+                    
+                    guessColor : guessColor
+                }
+
+            }());
+            
+            
+            //<---------------- Main module -------------------------------->
+            function do_game(){
+                
+                guessingGameModule.guessColor();
+            }
+
+        </script>
+    </body>
+    </html>
