@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta name="description" content="Coursera Web tutorials">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Soumya Mukhopadhyay">
+</head>
+
+<body onload="do_game()">
+    <script type="text/javascript" charset="utf-8">
+        //<--------------------- guessing game module -------------------------------------->
+        var guessingGameModule = (function () {
+
+            var colors = ["black", "blue", "brown", "cyan", "gold",
+                "green", "magenta", "orange", "pink", "red",
+                "silver", "violet", "yellow"];
+
+            var isColorGuessedCorrectly = false;
+            var guessCount = 0;
+
+            //private methods following nomenclature begining with '_'
+            function _sortColors() {
+
+                colors.sort();
+            };
+
+            function _changeBackground(color) {
+                document.body.style.background = color;
+            }
+
+            function _checkIfGuessedCorrectly(guessedColor, targetColor, target) {
+
+                //Check for equality first for quick execution of best case scenario
+                if (guessedColor === targetColor) {
+                    _changeBackground(targetColor);
+                    alert("You are right! You took " + guessCount + " guesses!");
+                    return true;
+                }
+
+                var guessedColorIndex = colors.indexOf(guessedColor);
+
+                if (guessedColorIndex < 0)
+                    alert("I don’t recognize that color!");
+                else if (guessedColorIndex > target)
+                    alert("Your input is alphabetically higher than mine!");
+                else
+                    alert("Your input is alphabetically lower than mine!");
+
+                return false;
+            }
+
+            function guessColor() {
+
+                _sortColors();
+
+                var targetColorIndex = Math.floor(Math.random() * colors.length);
+                var targetColor = colors[targetColorIndex];
+                alert(targetColor);
+
+                while (!isColorGuessedCorrectly) {
+
+                    var guessedColor = prompt(
+                        "I am thinking of one of these colors\n\n" + colors +
+                        "\n\nWhat color am I thinking of?"
+                    );
+                    ++guessCount;
+                    isColorGuessedCorrectly = _checkIfGuessedCorrectly(guessedColor, targetColor, targetColorIndex);
+                }
+
+            };
+
+
+            return {
+
+                guessColor: guessColor
+            }
+
+        }());
+
+
+        //<---------------- Main module -------------------------------->
+        function do_game() {
+
+            guessingGameModule.guessColor();
+        }
+
+    </script>
+</body>
+
+</html>
