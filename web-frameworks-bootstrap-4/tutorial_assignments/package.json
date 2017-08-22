@@ -4,8 +4,13 @@
   "description": "This is an assignment to learn npm lifecycle phases",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite" : "lite-server"
   },
   "author": "Soumya Mukhopadhyay",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
 }
