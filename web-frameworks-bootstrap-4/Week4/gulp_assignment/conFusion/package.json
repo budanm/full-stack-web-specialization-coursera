@@ -15,12 +15,14 @@
     "imagemin": "imagemin img/* -o dist/img",
     "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
-
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.18.13",
     "cssmin": "^0.4.3",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
     "htmlmin": "0.0.7",
     "lite-server": "^2.2.2",
     "node-sass": "^4.5.3",
