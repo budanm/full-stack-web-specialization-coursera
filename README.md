@@ -8,4 +8,11 @@ Note : For the javascript parts , I have used Revealing Module pattern to give a
 To know more about revealing module pattern , please visit this link below
 https://weblogs.asp.net/dwahlin/techniques-strategies-and-patterns-for-structuring-javascript-code-revealing-module-pattern
 
-## Par 2 : Web Frameworks and BootStrap
+## Par 2 : Web Frameworks and BootStrap-4
+
+Techonologies used
+
+* HTML ,CSS , Javascript
+* Bootstrap ( css and js components )
+* Grunt
+* Gulp
