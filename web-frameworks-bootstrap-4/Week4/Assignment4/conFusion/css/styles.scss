@@ -1,4 +1,5 @@
 $lt-gray: #ddd;
+$flrlwhite: floralwhite;
 $background-dark: #512DA8;
 $background-light: #9575CD;
 $background-pale: #D1C4E9;
@@ -65,6 +66,29 @@ body{
         }
     }
 }
+
+.modal {
+    
+    .modal-header {
+        background:$background-dark;
+        
+        //.modal-title {
+            color: $flrlwhite;
+        //}
+        .close {
+            color : $flrlwhite;
+        }
+    }
+
+    .modal-body {
+        background: $background-pale;
+    }
+
+    .modal-footer{
+        background: $background-light;
+    }
+}
+
 #carousel-button {
     right:0px;
     position: absolute;

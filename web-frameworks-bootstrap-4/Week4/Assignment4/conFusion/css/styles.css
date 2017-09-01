@@ -47,6 +47,18 @@ body {
       left: 0;
       min-height: 300px; }
 
+.modal .modal-header {
+  background: #512DA8;
+  color: floralwhite; }
+  .modal .modal-header .close {
+    color: floralwhite; }
+
+.modal .modal-body {
+  background: #D1C4E9; }
+
+.modal .modal-footer {
+  background: #9575CD; }
+
 #carousel-button {
   right: 0px;
   position: absolute;
