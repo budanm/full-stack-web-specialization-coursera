@@ -39,14 +39,6 @@ export class MenuComponent implements OnInit {
       description: 'A quintessential ConFusion experience, is it a vada or is it a donut?'
     },
     {
-      name: 'Vadonut',
-      image: '/assets/images/vadonut.png',
-      category: 'appetizer',
-      label: 'New',
-      price: '1.99',
-      description: 'A quintessential ConFusion experience, is it a vada or is it a donut?'
-    },
-    {
       name: 'ElaiCheese Cake',
       image: '/assets/images/elaicheesecake.png',
       category: 'dessert',
