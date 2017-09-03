@@ -22,17 +22,31 @@
     </div>
   </div>
 
-  <div fxFlex="40">
-    <div fxFlex *ngIf="dish">
-      <md-list>
-        <h2 mdSubheader>Comments</h2>
-        <md-list-item *ngFor="let commentObj of dish.comments">
-          <p mdLine> {{commentObj.comment}} </p>
-          <p mdLine> {{commentObj.rating}} Stars </p>
-          <p mdLine> -- {{commentObj.author}} {{commentObj.date | date}}</p>
-        </md-list-item>
-      </md-list>
+  <div fxFlex="40" fxFlexAlign="start">
+    <div class="container" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutAlign.gt-md="space-around start"
+      fxLayoutGap="10px" fxLayoutGap.xs="0">
+      <div fxFlex *ngIf="dish">
+        <div>
+          <h3>Comments</h3>
+        </div>
+      </div>
     </div>
+
+    <div class="container" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutAlign.gt-md="space-around start"
+      fxLayoutGap="10px" fxLayoutGap.xs="0">
+      <div fxFlex>
+        <md-list fxFlex *ngIf="dish">
+          <md-list-item *ngFor="let comment of dish.comments">
+            <p md-line>
+              <span> {{comment.comment}} </span>
+            </p>
+            <h4 md-line> {{comment.rating}} Stars</h4>
+            <p md-line>-- {{comment.author}} {{comment.date | date:'mediumDate'}}</p>
+          </md-list-item>
+        </md-list>
+      </div>
+    </div>
+
   </div>
 
 </div>
