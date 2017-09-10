@@ -3,7 +3,7 @@ import { Promotion } from '../shared/promotion';
 import { PROMOTIONS } from '../shared/promotions';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/of';
-import 'rxjs/add/observable/delay';
+import 'rxjs/add/operator/delay';
 
 @Injectable()
 export class PromotionService {
@@ -19,6 +19,6 @@ export class PromotionService {
   }
 
   getFeaturedPromotion(): Observable<Promotion> {
-    return Observable.of(PROMOTIONS.filter((promotion) => promotion.featured)[0]);
+    return Observable.of(PROMOTIONS.filter((promotion) => promotion.featured)[0]).delay(2000);
   }
 }

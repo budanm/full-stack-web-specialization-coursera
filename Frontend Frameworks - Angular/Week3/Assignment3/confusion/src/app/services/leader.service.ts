@@ -3,7 +3,7 @@ import { Leader } from '../shared/leader';
 import { LEADERS } from '../shared/leaders';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/of';
-import 'rxjs/add/observable/delay';
+import 'rxjs/add/operator/delay';
 
 @Injectable()
 export class LeaderService {
