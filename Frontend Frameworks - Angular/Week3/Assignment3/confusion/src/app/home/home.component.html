@@ -15,6 +15,11 @@
     </md-card-content>
   </md-card>
 
+  <div [hidden]="dish">
+    <md-spinner></md-spinner>
+    <h4>Loading . . . Please Wait</h4>
+  </div>
+
   <md-card *ngIf="promotion" fxFlex>
     <md-card-header>
       <div md-card-avatar></div>
