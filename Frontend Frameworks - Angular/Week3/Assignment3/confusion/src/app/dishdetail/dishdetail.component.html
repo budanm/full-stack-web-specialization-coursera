@@ -23,6 +23,12 @@
     </div>
   </div>
 
+
+  <div [hidden]="dish">
+      <md-spinner></md-spinner>
+      <h4>Loading . . . Please Wait</h4>
+    </div>
+
   <div fxFlex="40" fxFlexAlign="start">
     <div class="container" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutAlign.gt-md="space-around start"
       fxLayoutGap="10px" fxLayoutGap.xs="0">
