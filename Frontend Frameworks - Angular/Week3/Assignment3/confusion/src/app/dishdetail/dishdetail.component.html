@@ -37,26 +37,60 @@
       fxLayoutGap="10px" fxLayoutGap.xs="0">
       <div fxFlex *ngIf="dish">
         <div>
-          <h3>Comments</h3>
+          <md-list fxFlex *ngIf="dish">
+            <h3>Comments</h3>
+            <md-list-item *ngFor="let comment of dish.comments">
+              <p md-line>
+                <span> {{comment.comment}} </span>
+              </p>
+              <h4 md-line> {{comment.rating}} Stars</h4>
+              <p md-line>-- {{comment.author}} {{comment.date | date:'mediumDate'}}</p>
+            </md-list-item>
+
+            <!-- List Item for dish feedback preview -->
+            <md-list-item *ngIf="dishfeedbackform.valid">
+
+              <p md-line>
+                <span> {{dishfeedbackform.value.comment}} </span>
+              </p>
+              <p md-line> {{dishfeedbackform.value.rating}} Stars</p>
+              <p md-line>-- {{dishfeedbackform.value.author}}</p>
+            </md-list-item>
+            <!-- dish feedback preview ends -->
+
+            
+          </md-list>
         </div>
+
+
+        <!-- Dish Feedback form begins -->
+        <form novalidate [formGroup]="dishfeedbackform" (ngSubmit)="onSubmit()">
+          <p>
+            <md-input-container dividerColor="{{(formErrors.author) ? 'warn' : 'primary'}}">
+              <input mdInput formControlName="author" placeholder="Name" type="text" required>
+              <md-hint>
+                <span [hidden]="!(formErrors.author)">
+                          {{formErrors.author}}</span>
+              </md-hint>
+            </md-input-container>
+          </p>
+          <md-slider flex formControlName="rating" step="1" min="1" max="5" thumbLabel tickInterval="1"></md-slider>
+          <p>
+            <md-input-container dividerColor="{{(formErrors.comment) ? 'warn' : 'primary'}}">
+              <textarea mdInput formControlName="comment" placeholder="Your Comment" rows=12 required></textarea>
+              <md-hint>
+                <span [hidden]="!(formErrors.comment)">
+                            {{formErrors.comment}}</span>
+              </md-hint>
+            </md-input-container>
+          </p>
+          <button type="submit" md-button class="background-primary text-floral-white" [disabled]="dishfeedbackform.invalid">Submit</button>
+        </form>
+        <!-- Dish Feedback form ends -->
+
+
       </div>
     </div>
-
-    <div class="container" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutAlign.gt-md="space-around start"
-      fxLayoutGap="10px" fxLayoutGap.xs="0">
-      <div fxFlex>
-        <md-list fxFlex *ngIf="dish">
-          <md-list-item *ngFor="let comment of dish.comments">
-            <p md-line>
-              <span> {{comment.comment}} </span>
-            </p>
-            <h4 md-line> {{comment.rating}} Stars</h4>
-            <p md-line>-- {{comment.author}} {{comment.date | date:'mediumDate'}}</p>
-          </md-list-item>
-        </md-list>
-      </div>
-    </div>
-
   </div>
 
 </div>
