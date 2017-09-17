@@ -27,7 +27,7 @@
         <h3>{{promotion.name | uppercase}}</h3>
       </md-card-title>
     </md-card-header>
-    <img md-card-image src={{promotion.image}} alt={{promotion.name}}>
+    <img md-card-image src="{{BaseURL + promotion.image}}" alt={{promotion.name}}>
     <md-card-content>
       <p>{{promotion.description}}
       </p>
@@ -46,7 +46,7 @@
         <h3>{{leader.name | uppercase}} {{leader.abbr | uppercase}}</h3>
       </md-card-title>
     </md-card-header>
-    <img md-card-image src={{leader.image}} alt={{leader.name}}>
+    <img md-card-image src="{{BaseURL + leader.image}}" alt={{leader.name}}>
     <md-card-content>
       <p>{{leader.designation}}</p>
       <p>{{leader.description}}
