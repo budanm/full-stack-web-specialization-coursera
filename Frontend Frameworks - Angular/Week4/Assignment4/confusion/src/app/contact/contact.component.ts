@@ -2,8 +2,10 @@ import { Component, OnInit, Inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms'
 import { ContactType, Feedback } from '../shared/feedback'
 import { flyInOut, expand } from '../animations/app.animation';
+import { Observable } from 'rxjs/Observable';
 
 import { FeedbackService } from '../services/feedback.service';
+
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -13,14 +15,18 @@ import { FeedbackService } from '../services/feedback.service';
     'style': 'display: block;'
   },
   animations: [
-    flyInOut()
+    flyInOut(),
+    expand()
   ]
 })
 export class ContactComponent implements OnInit {
 
   feedbackForm: FormGroup;
-  feedback: Feedback;
+  postedfeedback: Feedback;
   contactType = ContactType;
+  submitting = false;
+  hideForm = false;
+  errMessage: string;
 
   constructor(private feedbackservice: FeedbackService, private fb: FormBuilder, @Inject('BaseURL') private BaseURL) {
     this.createForm();
@@ -100,19 +106,58 @@ export class ContactComponent implements OnInit {
 
   }
 
+  /**
+   * reset form values and hide other intermediate divs
+   * using observable timer
+   * @param timer 
+   */
+  reset(timer: number) {
+
+    Observable.timer(timer).subscribe(() => {
+      this.feedbackForm.reset({
+        firstname: '',
+        lastname: '',
+        telnum: '',
+        email: '',
+        agree: false,
+        contacttype: 'None',
+        message: ''
+      });
+      this.postedfeedback = null;
+      this.hideForm = false;
+
+    });
+  }
+
+  /**
+   * Once submission process starts, do the following:
+   * a) set the binding value submitting to true and enable the " Submitting form spinner"
+   * b) set the binding value hideForm to true such that the form is hidden
+   * 
+   * On completion, do the following :
+   * a) set the binding value postedfeedback such that the div showing the details of the postedfeedback is visible
+   * b) set the submitting to false such that spinner goes away
+   * c) call reset to reset the form values and hide the postedfeedback details div.
+   *    -> for success the time is 5 sec and for failure its 0 sec
+   */
   onSubmit() {
 
-    this.feedback = this.feedbackForm.value;
-    this.feedbackservice.submitFeedback(this.feedbackForm.value).subscribe(feedback => this.feedback = feedback);
-    this.feedbackForm.reset({
-      firstname: '',
-      lastname: '',
-      telnum: '',
-      email: '',
-      agree: false,
-      contacttype: 'None',
-      message: ''
-    });
+    this.submitting = true;
+    this.hideForm = true;
+    this.feedbackservice.submitFeedback(this.feedbackForm.value).subscribe(
+      feedback => {
+        this.postedfeedback = feedback;
+        this.submitting = false;
+        this.reset(5000);
+      },
+      errmess => {
+        this.errMessage = <any>errmess;
+        this.submitting = false;
+        this.reset(0);
+      }
+    );
+
+
   }
 
 }
