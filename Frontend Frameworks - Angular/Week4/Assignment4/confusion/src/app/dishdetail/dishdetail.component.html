@@ -2,7 +2,7 @@
   fxLayoutGap="10px" fxLayoutGap.xs="0">
 
   <div fxFlex="40">
-    <div fxFlex *ngIf="dish" [@visibility]="visibility">
+    <div fxFlex *ngIf="dish" [@visibility]="visibility" [@expand]>
       <md-card>
         <md-card-header>
           <md-card-title>
@@ -32,7 +32,7 @@
     <h4>Loading . . . Please Wait</h4>
   </div>
 
-  <div fxFlex="40" fxFlexAlign="start" *ngIf="dish" [@visibility]="visibility">
+  <div fxFlex="40"  [@visibility]="visibility" [@expand] fxFlexAlign="start" *ngIf="dish" >
     <div class="container" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutAlign.gt-md="space-around start"
       fxLayoutGap="10px" fxLayoutGap.xs="0">
       <div fxFlex *ngIf="dish">
