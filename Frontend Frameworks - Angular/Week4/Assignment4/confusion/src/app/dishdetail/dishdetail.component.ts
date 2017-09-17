@@ -23,6 +23,7 @@ export class DishdetailComponent implements OnInit {
   next: number;
   dishfeedbackform: FormGroup;
   dishComment: Comment;
+  dishcopy = null;
 
   formErrors = {
     'author': '',
@@ -44,7 +45,7 @@ export class DishdetailComponent implements OnInit {
     private route: ActivatedRoute,
     private location: Location,
     private fb: FormBuilder,
-  @Inject('BaseURL') private BaseURL) {
+    @Inject('BaseURL') private BaseURL) {
     this.createForm();
     this.dishComment = new Comment();
   }
@@ -53,7 +54,7 @@ export class DishdetailComponent implements OnInit {
     this.dishservice.getDishIds().subscribe(dishIds => this.dishIds = dishIds);
     this.route.params
       .switchMap((params: Params) => this.dishservice.getDish(+params['id']))
-      .subscribe(dish => { this.dish = dish; this.setPrevNext(dish.id); });
+      .subscribe(dish => { this.dish = dish; this.dishcopy = dish; this.setPrevNext(dish.id); });
 
   }
 
@@ -113,7 +114,11 @@ export class DishdetailComponent implements OnInit {
       this.dishComment.comment = this.dishfeedbackform.value.comment;
       this.dishComment.rating = this.dishfeedbackform.value.rating;
 
-      this.dish.comments.push(this.dishComment);
+      this.dishcopy.comments.push(this.dishComment);
+      this.dishcopy.save().subscribe(
+        dish => this.dish = dish
+      );
+
     }
 
 
