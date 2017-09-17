@@ -28,7 +28,10 @@ import { ContactComponent } from './contact/contact.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { LoginComponent } from './login/login.component';
 
-import { baseURL } from './shared/baseurl'
+import { baseURL } from './shared/baseurl';
+
+import { RestangularModule, Restangular} from 'ngx-restangular';
+import { RestangularConfigFactory } from './shared/restConfig';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,7 +55,8 @@ import { baseURL } from './shared/baseurl'
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpModule
+    HttpModule,
+    RestangularModule.forRoot(RestangularConfigFactory)
   ],
   providers: [DishService, PromotionService, LeaderService, ProcessHTTPMsgService,
     { provide: 'BaseURL', useValue: baseURL }],
