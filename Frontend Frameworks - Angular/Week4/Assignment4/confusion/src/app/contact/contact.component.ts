@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms'
 import { ContactType, Feedback } from '../shared/feedback'
 import { flyInOut, expand } from '../animations/app.animation';
+
+import { FeedbackService } from '../services/feedback.service';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -20,11 +22,12 @@ export class ContactComponent implements OnInit {
   feedback: Feedback;
   contactType = ContactType;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private feedbackservice: FeedbackService, private fb: FormBuilder, @Inject('BaseURL') private BaseURL) {
     this.createForm();
   }
 
   ngOnInit() {
+
   }
 
   createForm() {
@@ -100,7 +103,7 @@ export class ContactComponent implements OnInit {
   onSubmit() {
 
     this.feedback = this.feedbackForm.value;
-    console.log(this.feedback);
+    this.feedbackservice.submitFeedback(this.feedbackForm.value).subscribe(feedback => this.feedback = feedback);
     this.feedbackForm.reset({
       firstname: '',
       lastname: '',
