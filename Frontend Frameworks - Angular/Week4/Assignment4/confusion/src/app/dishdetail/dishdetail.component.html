@@ -1,6 +1,16 @@
 <div class="container" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutAlign.gt-md="space-around center"
   fxLayoutGap="10px" fxLayoutGap.xs="0">
 
+  <div [hidden]="dishes || errMess">
+    <md-spinner></md-spinner>
+    <h4>Loading . . . Please Wait</h4>
+  </div>
+
+  <div *ngIf="errMess">
+    <h2>Error</h2>
+    <h4>{{errMess}}</h4>
+  </div>
+
   <div fxFlex="40">
     <div fxFlex *ngIf="dish" [@visibility]="visibility" [@expand]>
       <md-card>
@@ -26,11 +36,6 @@
     </div>
   </div>
 
-
-  <div [hidden]="dish">
-    <md-spinner></md-spinner>
-    <h4>Loading . . . Please Wait</h4>
-  </div>
 
   <div fxFlex="40"  [@visibility]="visibility" [@expand] fxFlexAlign="start" *ngIf="dish" >
     <div class="container" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutAlign.gt-md="space-around start"
