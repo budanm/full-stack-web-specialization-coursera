@@ -24,3 +24,10 @@ Techonologies used
 
 ## Part 3 : Front-End JavaScript Frameworks: Angular
 
+Technologies used
+
+* Angular 4
+* TypeScript
+
+* [ Certificate ]( https://www.coursera.org/account/accomplishments/verify/BCD8JQYZUF7P )
+
