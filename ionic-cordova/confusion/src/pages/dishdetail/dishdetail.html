@@ -1,15 +1,15 @@
 <ion-header>
-  
-    <ion-navbar color="primary">
-      <ion-title>Dish Details</ion-title>
-    </ion-navbar>
-  
-  </ion-header>
-  
-  
-  <ion-content padding>
+
+  <ion-navbar color="primary">
+    <ion-title>Dish Details</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
   <ion-card *ngIf="dish">
-    <img src="{{BaseURL + dish.image}}"/>
+    <img src="{{BaseURL + dish.image}}" />
     <ion-card-content>
       <ion-card-title>
         {{dish.name | uppercase}}
@@ -41,7 +41,7 @@
     <h2>Error</h2>
     <h4>{{errMess}}</h4>
   </div>
-  
+
   <ion-list *ngIf="dish">
     <ion-list-header>
       Comments
@@ -54,5 +54,16 @@
       </p>
     </ion-item>
   </ion-list>
-  
-  </ion-content>
+
+  <ion-fab bottom right [hidden]="favorite">
+    <button ion-fab (click)="addToFavorites()">
+      <ion-icon name="heart-outline"></ion-icon>
+    </button>
+  </ion-fab>
+  <ion-fab bottom right *ngIf="favorite">
+    <button ion-fab>
+      <ion-icon name="heart"></ion-icon>
+    </button>
+  </ion-fab>
+
+</ion-content>
