@@ -1,8 +1,9 @@
 import { Component, Inject } from '@angular/core';
-import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController, ActionSheetController, ModalController } from 'ionic-angular';
 import { Dish } from '../../shared/dish';
 import { Comment } from '../../shared/comment';
 import { FavoriteProvider } from '../../providers/favorite/favorite';
+import{ CommentPage } from '../comment/comment';
 
 /**
  * Generated class for the DishdetailPage page.
@@ -26,7 +27,9 @@ export class DishdetailPage {
     public navParams: NavParams,
     @Inject('BaseURL') private BaseURL,
     private favoriteservice: FavoriteProvider,
-    private toastCtrl: ToastController) {
+    private toastCtrl: ToastController,
+    private actionsheetCtrl: ActionSheetController,
+    private modalCtrl: ModalController) {
 
     this.dish = navParams.get('dish');
     this.numcomments = this.dish.comments.length;
@@ -42,13 +45,46 @@ export class DishdetailPage {
     this.favorite = this.favoriteservice.addFavorite(this.dish.id);
 
     this.toastCtrl.create({
-      message: 'Dish' + this.dish.id + ' added as favorite successfully',
+      message: 'Dish ' + this.dish.id + ' added as favorite successfully',
       position: 'middle',
       duration: 3000
     }).present();
   }
   ionViewDidLoad() {
     console.log('ionViewDidLoad DishdetailPage');
+  }
+
+
+  openSheet() {
+    let actionSheet = this.actionsheetCtrl.create({
+      title: 'Select Actions',
+      cssClass: 'action-sheets-basic-page',
+      buttons: [
+        {
+          text: 'Add to Favorites',
+          handler: () => {
+            this.addToFavorites();
+          }
+        },
+        {
+          text: 'Add Comment',
+          handler: () => {
+            let modal = this.modalCtrl.create(CommentPage,{
+              dish: this.dish
+            });
+            modal.present();
+          }
+        },
+        {
+          text: 'Cancel',
+          role: 'cancel', // will always sort to be on the bottom
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        }
+      ]
+    });
+    actionSheet.present();
   }
 
 }
