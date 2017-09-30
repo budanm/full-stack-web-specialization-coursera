@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
-import { Dish } from '../../shared/dish';
+
 
 /**
  * Generated class for the CommentPage page.
@@ -18,7 +18,7 @@ import { Dish } from '../../shared/dish';
 export class CommentPage {
 
   commentForm: FormGroup;
-  dish: Dish;
+
 
 
   constructor(public navCtrl: NavController,
@@ -26,12 +26,12 @@ export class CommentPage {
     public viewCtrl: ViewController,
     private formbuilder: FormBuilder) {
 
-    this.dish = navParams.get('dish');
+
 
     this.commentForm = this.formbuilder.group({
       author: ['', Validators.required],
       rating: 5,
-      comment: ['', Validators.required]
+      comments: ['', Validators.required]
     })
   }
 
@@ -45,14 +45,13 @@ export class CommentPage {
 
   onSubmit() {
     console.log(this.commentForm.value);
-    this.dish.comments.push({
+    this.viewCtrl.dismiss({
       'author': this.commentForm.value.author,
       'date': new Date().toISOString(),
-      'comment': this.commentForm.value.comment,
+      'comment': this.commentForm.value.comments,
       'rating': this.commentForm.value.rating
 
-    })
-    this.viewCtrl.dismiss();
+    });
   }
 
 }

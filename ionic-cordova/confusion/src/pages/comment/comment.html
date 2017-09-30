@@ -26,14 +26,14 @@
     </ion-item>
     <ion-item>
       <ion-label stacked>Your Rating</ion-label>
-      <ion-range min="1" max="5" step="1" pin="true" tickInterval="1" formControlName="rating">
+      <ion-range min="1" max="5" step="1" pin="true" formControlName="rating">
         <ion-icon range-left small name="sad"></ion-icon>
         <ion-icon range-right name="happy"></ion-icon>
       </ion-range>
     </ion-item>
     <ion-item>
       <ion-label floating>Your Comment</ion-label>
-      <<ion-textarea formControlName="comment" rows="12"></ion-textarea>
+      <<ion-textarea formControlName="comments" rows="12"></ion-textarea>
     </ion-item>
     <button ion-button type="submit" [disabled]="!commentForm.valid">Submit</button>
   </form>

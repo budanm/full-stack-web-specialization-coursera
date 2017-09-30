@@ -22,6 +22,7 @@ export class DishdetailPage {
   avgstars: string;
   numcomments: number;
   favorite: boolean;
+  
 
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
@@ -55,6 +56,12 @@ export class DishdetailPage {
   }
 
 
+  /**
+   * This method will open the actionsheet
+   * a) Add to Favorites
+   * b) Add Comment
+   * c) Cancel
+   */
   openSheet() {
     let actionSheet = this.actionsheetCtrl.create({
       title: 'Select Actions',
@@ -69,9 +76,14 @@ export class DishdetailPage {
         {
           text: 'Add Comment',
           handler: () => {
-            let modal = this.modalCtrl.create(CommentPage,{
-              dish: this.dish
-            });
+            let modal = this.modalCtrl.create(CommentPage);
+            modal.onDidDismiss(
+              comment =>{
+                if(comment){
+                  this.dish.comments.push(comment);
+                }
+              }
+            )
             modal.present();
           }
         },
