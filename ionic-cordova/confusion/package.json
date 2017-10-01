@@ -20,6 +20,7 @@
     "@angular/http": "4.4.3",
     "@angular/platform-browser": "4.4.3",
     "@angular/platform-browser-dynamic": "4.4.3",
+    "@ionic-native/camera": "^4.3.0",
     "@ionic-native/core": "3.12.1",
     "@ionic-native/email-composer": "^4.3.0",
     "@ionic-native/local-notifications": "^4.3.0",
@@ -29,6 +30,8 @@
     "@ionic/storage": "2.0.1",
     "cordova-android": "^6.2.3",
     "cordova-plugin-app-event": "file:node_modules\\cordova-plugin-app-event",
+    "cordova-plugin-camera": "^2.4.1",
+    "cordova-plugin-compat": "^1.1.0",
     "cordova-plugin-device": "^1.1.4",
     "cordova-plugin-email": "^1.2.6",
     "cordova-plugin-splashscreen": "^4.0.3",
@@ -58,7 +61,8 @@
       "ionic-plugin-keyboard": {},
       "de.appplant.cordova.plugin.local-notification": {},
       "cordova-plugin-email": {},
-      "cordova-plugin-x-socialsharing": {}
+      "cordova-plugin-x-socialsharing": {},
+      "cordova-plugin-camera": {}
     },
     "platforms": [
       "android"
