@@ -31,3 +31,12 @@ Technologies used
 
 * [ Certificate ]( https://www.coursera.org/account/accomplishments/verify/BCD8JQYZUF7P )
 
+## Part 4 : Hybrid Mobile Application Development - IONIC and CORDOVA
+
+Technologies used
+
+* Ionic
+* Cordova
+* Angular
+* TypeScript
+
