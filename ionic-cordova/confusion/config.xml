@@ -88,4 +88,5 @@
     <plugin name="ionic-plugin-keyboard" spec="^2.2.1" />
     <allow-navigation href="http://192.168.0.110:8101" />
     <plugin name="cordova-plugin-email" spec="^1.2.6" />
+    <plugin name="cordova-plugin-x-socialsharing" spec="^5.2.0" />
 </widget>
