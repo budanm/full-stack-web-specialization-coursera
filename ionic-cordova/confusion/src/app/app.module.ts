@@ -3,6 +3,7 @@ import { IonicStorageModule } from '@ionic/storage';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { LocalNotifications } from '@ionic-native/local-notifications';
+import { EmailComposer } from '@ionic-native/email-composer';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -69,7 +70,8 @@ import { FavoriteProvider } from '../providers/favorite/favorite';
     PromotionProvider,
     ProcessHttpmsgProvider,
     FavoriteProvider,
-    LocalNotifications
+    LocalNotifications,
+    EmailComposer
   ]
 })
 export class AppModule { }
