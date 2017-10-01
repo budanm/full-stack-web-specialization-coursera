@@ -71,6 +71,5 @@ export class RegisterPage {
     console.log(this.registerForm.value);
     this.dismiss();
   }
-}
 
 }
