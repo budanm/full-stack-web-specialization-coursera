@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="float" name="animationStartValue"/>
+    <attr format="float" name="maximum"/>
+    <attr format="float" name="minimum"/>
+    <attr format="float" name="strokeWidthF"/>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <declare-styleable name="GaugeBarIndicator"><attr name="maximum"/><attr name="minimum"/><attr name="animationStartValue"/><attr format="float" name="location"/><attr format="enum" name="cap"><enum name="round" value="0"/><enum name="edge" value="1"/></attr></declare-styleable>
+    <declare-styleable name="GaugeIndicator"><attr name="strokeColor"/><attr name="strokeWidthF"/><attr name="fillColor"/><attr format="boolean" name="animated"/><attr format="integer" name="animationDuration"/></declare-styleable>
+    <declare-styleable name="GaugeRadialBarIndicator"/>
+    <declare-styleable name="GaugeRadialNeedle"><attr format="float" name="length"/><attr format="float" name="bottomWidth"/><attr format="float" name="topWidth"/><attr format="float" name="circleRadius"/><attr format="float" name="circleInnerRadius"/><attr format="float" name="offset"/><attr format="color" name="circleFillColor"/><attr format="color" name="circleStrokeColor"/><attr format="float" name="value"/><attr name="animationStartValue"/></declare-styleable>
+    <declare-styleable name="GaugeRadialScale"><attr format="float" name="startAngle"/><attr format="float" name="sweepAngle"/><attr format="float" name="radius"/></declare-styleable>
+    <declare-styleable name="GaugeScale"><attr name="maximum"/><attr name="minimum"/><attr format="boolean" name="lineVisible"/><attr name="fillColor"/><attr name="strokeColor"/><attr name="strokeWidthF"/><attr format="color" name="majorTicksFillColor"/><attr format="color" name="majorTicksStrokeColor"/><attr format="color" name="minorTicksFillColor"/><attr format="color" name="minorTicksStrokeColor"/><attr format="integer" name="majorTicksCount"/><attr format="integer" name="minorTicksCount"/><attr format="boolean" name="ticksVisible"/><attr format="float" name="majorTicksLength"/><attr format="float" name="minorTicksLength"/><attr format="float" name="majorTicksWidth"/><attr format="float" name="minorTicksWidth"/><attr format="float" name="ticksOffset"/><attr format="enum" name="ticksLayoutMode"><enum name="outer" value="0"/><enum name="inner" value="1"/></attr><attr format="boolean" name="labelsVisible"/><attr format="integer" name="labelsCount"/><attr format="color" name="labelsColor"/><attr format="enum" name="labelsLayoutMode"><enum name="outer" value="0"/><enum name="inner" value="1"/></attr><attr format="float" name="labelsOffset"/></declare-styleable>
+    <declare-styleable name="RadGaugeView"><attr format="integer" name="titleHorizontalOffset"/><attr format="integer" name="titleVerticalOffset"/><attr format="integer" name="subtitleHorizontalOffset"/><attr format="integer" name="subtitleVerticalOffset"/><attr name="fillColor"/></declare-styleable>
+    <string name="app_name">Gauge</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+</resources>

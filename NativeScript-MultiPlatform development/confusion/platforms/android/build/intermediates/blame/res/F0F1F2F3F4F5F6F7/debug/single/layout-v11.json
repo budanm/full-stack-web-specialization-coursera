@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "C:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1F2F3F4F5F6F7\\debug\\layout-v11\\notification_template_big_media_narrow_custom.xml",
+        "source": "C:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "C:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1F2F3F4F5F6F7\\debug\\layout-v11\\notification_template_big_media.xml",
+        "source": "C:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout-v11\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "C:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1F2F3F4F5F6F7\\debug\\layout-v11\\on_demand_manual.xml",
+        "source": "C:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\build\\intermediates\\exploded-aar\\List-2017.1.1003-dev-release\\res\\layout-v11\\on_demand_manual.xml"
+    },
+    {
+        "merged": "C:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1F2F3F4F5F6F7\\debug\\layout-v11\\notification_template_big_media_custom.xml",
+        "source": "C:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout-v11\\notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "C:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1F2F3F4F5F6F7\\debug\\layout-v11\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout-v11\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "C:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1F2F3F4F5F6F7\\debug\\layout-v11\\simple_list_item.xml",
+        "source": "C:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\build\\intermediates\\exploded-aar\\List-2017.1.1003-dev-release\\res\\layout-v11\\simple_list_item.xml"
+    },
+    {
+        "merged": "C:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1F2F3F4F5F6F7\\debug\\layout-v11\\notification_media_action.xml",
+        "source": "C:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout-v11\\notification_media_action.xml"
+    },
+    {
+        "merged": "C:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1F2F3F4F5F6F7\\debug\\layout-v11\\notification_media_cancel_action.xml",
+        "source": "C:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout-v11\\notification_media_cancel_action.xml"
+    }
+]

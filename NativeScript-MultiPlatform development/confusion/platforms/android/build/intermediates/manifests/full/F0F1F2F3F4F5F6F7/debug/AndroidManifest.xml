@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.nativescript.confusion"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="25" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--
+    Describe the permissions, features or other configurations required by your plugin for Android. 
+		To read more about android permissions go to https://developer.android.com/guide/topics/permissions/index.html
+    -->
+    <!-- EXAMPLE: uses-permission android:name="android.permission.INTERNET"/> -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.1" />
+
+    <application
+        android:name="com.tns.NativeScriptApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="org.nativescript.confusion.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name="com.telerik.localnotifications.NotificationClickedActivity" />
+
+        <receiver
+            android:name="com.telerik.localnotifications.NotificationPublisher"
+            android:exported="false" />
+        <receiver
+            android:name="com.telerik.localnotifications.NotificationRestoreReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.tns.NativeScriptActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_kimera"
+            android:theme="@style/LaunchScreenTheme" >
+            <meta-data
+                android:name="SET_THEME_ON_LAUNCH"
+                android:resource="@style/AppTheme" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tns.ErrorReportActivity" />
+        <activity
+            android:name="com.telerik.widget.feedback.SendFeedbackActivity"
+            android:label="@string/title_activity_send_feedback"
+            android:theme="@style/AppCompatTheme" >
+        </activity>
+        <activity
+            android:name="com.telerik.widget.feedback.ViewFeedbackActivity"
+            android:label="@string/title_activity_view_feedback"
+            android:theme="@style/AppCompatTheme" >
+        </activity>
+        <activity
+            android:name="com.telerik.widget.feedback.ViewFeedbackItemActivity"
+            android:label="@string/title_activity_view_feedback"
+            android:theme="@style/AppCompatTheme" >
+        </activity>
+        <activity
+            android:name="com.telerik.widget.feedback.EditDetailsActivity"
+            android:label="@string/title_activity_edit_details"
+            android:theme="@style/AppCompatTheme" >
+        </activity>
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.1.0" />
+        <meta-data
+            android:name="android.arch.lifecycle.VERSION"
+            android:value="27.0.0-SNAPSHOT" />
+    </application>
+
+</manifest>

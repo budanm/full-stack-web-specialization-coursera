@@ -1,0 +1,4 @@
+#Thu Oct 12 10:28:15 IST 2017
+base.0=C\:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\build\\intermediates\\transforms\\dex\\F0F1F2F3F4F5F6F7\\debug\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=C\:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\build\\intermediates\\transforms\\dex\\F0F1F2F3F4F5F6F7\\debug\\folders\\1000\\1f\\main\\classes.dex

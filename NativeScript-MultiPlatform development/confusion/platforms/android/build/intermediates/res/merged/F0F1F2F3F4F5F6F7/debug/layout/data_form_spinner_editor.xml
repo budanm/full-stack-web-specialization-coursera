@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Spinner xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/data_form_spinner_editor"
+    android:minHeight="42dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/data_form_editor_text_size"
+    style="@style/Widget.AppCompat.Spinner.Underlined"/>

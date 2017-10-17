@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.telerik.widget.autocomplete.TokenView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/token_bg"
+    android:ellipsize="end"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    android:clickable="true">
+    <View
+        android:layout_width="4dp"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tokenimage"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/token_text_color"
+        android:layout_gravity="center_vertical"
+        android:maxLines="1"
+        android:layout_marginLeft="4dp"
+        android:id="@+id/tokentext"/>
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_gravity="center"
+        android:id="@+id/xview"
+        android:src="@drawable/ic_token_remove"/>
+
+</com.telerik.widget.autocomplete.TokenView>

@@ -1,0 +1,147 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "nativescript-telerik-ui",
+        "scope": null,
+        "escapedName": "nativescript-telerik-ui",
+        "name": "nativescript-telerik-ui",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\Android\\NativeScriptApps\\confusion"
+    ]
+  ],
+  "_from": "nativescript-telerik-ui@latest",
+  "_id": "nativescript-telerik-ui@3.1.4",
+  "_inCache": true,
+  "_location": "/nativescript-telerik-ui",
+  "_nodeVersion": "6.11.3",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/nativescript-telerik-ui-3.1.4.tgz_1507106412882_0.5588962244801223"
+  },
+  "_npmUser": {
+    "name": "tns-bot",
+    "email": "nativescript@telerik.com"
+  },
+  "_npmVersion": "4.6.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "nativescript-telerik-ui",
+    "scope": null,
+    "escapedName": "nativescript-telerik-ui",
+    "name": "nativescript-telerik-ui",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-telerik-ui/-/nativescript-telerik-ui-3.1.4.tgz",
+  "_shasum": "6c4e49ce0e15bc895b299cf48116f8e2ce594ad1",
+  "_shrinkwrap": null,
+  "_spec": "nativescript-telerik-ui",
+  "_where": "C:\\Android\\NativeScriptApps\\confusion",
+  "author": {
+    "name": "Progress"
+  },
+  "bugs": {
+    "url": "https://github.com/telerik/nativescript-ui-feedback/issues"
+  },
+  "dependencies": {},
+  "deprecated": "Progress NativeScript UI is now completely free. This package is deprecated, please download the latest version of this package: nativescript-pro-ui",
+  "description": "Progress NativeScript UI is a set of rich-ui, cross-platform components based on the native iOS and Android libraries provided by Telerik.",
+  "devDependencies": {
+    "@angular/common": "~4.0.0",
+    "@angular/compiler": "~4.0.0",
+    "@angular/compiler-cli": "~4.0.0",
+    "@angular/core": "~4.0.0",
+    "@angular/forms": "~4.0.0",
+    "@angular/http": "~4.0.0",
+    "@angular/platform-browser": "~4.0.0",
+    "@angular/platform-browser-dynamic": "~4.0.0",
+    "@angular/router": "~4.0.0",
+    "nativescript-angular": "next",
+    "nativescript-dev-typescript": "^0.3.0",
+    "nativescript-intl": "^0.0.4",
+    "nativescript-unit-test-runner": "^0.3.3",
+    "parse5": "1.3.2",
+    "punycode": "1.3.2",
+    "querystring": "0.2.0",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "~5.3.0",
+    "tns-core-modules": "next",
+    "tns-platform-declarations": "next",
+    "typescript": "2.4.1",
+    "url": "0.10.3",
+    "zone.js": "~0.8.2"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "6c4e49ce0e15bc895b299cf48116f8e2ce594ad1",
+    "tarball": "https://registry.npmjs.org/nativescript-telerik-ui/-/nativescript-telerik-ui-3.1.4.tgz"
+  },
+  "files": [
+    "**/*.js",
+    "**/*.metadata.json",
+    "**/*.d.ts",
+    "**/*.aar",
+    "**/*.framework",
+    "platforms/android/include.gradle",
+    "!platforms/ios/TelerikAppFeedback.framework/",
+    "!platforms/android/Chart*.aar",
+    "!platforms/android/Feedback*.aar",
+    "!platforms/android/Gauges*.aar",
+    "!platforms/android/Input*.aar",
+    "!calendar/",
+    "!chart/",
+    "!dataform/",
+    "!feedback/",
+    "!autocomplete/",
+    "!gauges/",
+    "!hooks/"
+  ],
+  "keywords": [
+    "nativescript",
+    "ui",
+    "sidedrawer",
+    "listview"
+  ],
+  "license": "SEE LICENSE IN LICENSE.md",
+  "maintainers": [
+    {
+      "name": "amiorkov",
+      "email": "v.amiorkov@gmail.com"
+    },
+    {
+      "name": "dginev",
+      "email": "deyan.ginev@telerik.com"
+    },
+    {
+      "name": "tns-bot",
+      "email": "nativescript@telerik.com"
+    }
+  ],
+  "name": "nativescript-telerik-ui",
+  "nativescript": {
+    "ios": "3.2.0",
+    "android": "3.2.0"
+  },
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "tns-core-modules": "^3.1.0 || >3.2.0-"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "http://www.github.com/telerik/nativescript-ui-feedback.git"
+  },
+  "scripts": {
+    "preinstall": "node ./scripts/eula-prompt.js"
+  },
+  "version": "3.1.4"
+}

@@ -1,0 +1,95 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "nativescript-local-notifications",
+        "scope": null,
+        "escapedName": "nativescript-local-notifications",
+        "name": "nativescript-local-notifications",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\Android\\NativeScriptApps\\confusion"
+    ]
+  ],
+  "_from": "nativescript-local-notifications@latest",
+  "_id": "nativescript-local-notifications@2.0.0",
+  "_inCache": true,
+  "_location": "/nativescript-local-notifications",
+  "_nodeVersion": "6.10.3",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/nativescript-local-notifications-2.0.0.tgz_1507026723262_0.013058894546702504"
+  },
+  "_npmUser": {
+    "name": "eddyverbruggen",
+    "email": "eddyverbruggen@gmail.com"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "nativescript-local-notifications",
+    "scope": null,
+    "escapedName": "nativescript-local-notifications",
+    "name": "nativescript-local-notifications",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-local-notifications/-/nativescript-local-notifications-2.0.0.tgz",
+  "_shasum": "f6c25936386cfb5c970f95eab6419c6793effd2f",
+  "_shrinkwrap": null,
+  "_spec": "nativescript-local-notifications",
+  "_where": "C:\\Android\\NativeScriptApps\\confusion",
+  "author": {
+    "name": "Telerik / Eddy Verbruggen",
+    "email": "eddyverbruggen@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/eddyverbruggen/nativescript-local-notifications/issues"
+  },
+  "dependencies": {},
+  "description": "The Local Notifications plugin allows your app to show notifications when the app is not running. Just like remote push notifications, but a few orders of magnitude easier to set up.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "f6c25936386cfb5c970f95eab6419c6793effd2f",
+    "tarball": "https://registry.npmjs.org/nativescript-local-notifications/-/nativescript-local-notifications-2.0.0.tgz"
+  },
+  "gitHead": "f70706d42f5143e0a8ef59adf06d2e2342d6191b",
+  "homepage": "https://github.com/eddyverbruggen/nativescript-local-notifications",
+  "keywords": [
+    "NativeScript",
+    "Notification",
+    "Local Notification"
+  ],
+  "license": "MIT",
+  "main": "local-notifications",
+  "maintainers": [
+    {
+      "name": "eddyverbruggen",
+      "email": "eddyverbruggen@gmail.com"
+    }
+  ],
+  "name": "nativescript-local-notifications",
+  "nativescript": {
+    "platforms": {
+      "android": "2.3.0",
+      "ios": "2.3.0"
+    }
+  },
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eddyverbruggen/nativescript-local-notifications.git"
+  },
+  "scripts": {},
+  "typings": "local-notifications.d.ts",
+  "version": "2.0.0"
+}

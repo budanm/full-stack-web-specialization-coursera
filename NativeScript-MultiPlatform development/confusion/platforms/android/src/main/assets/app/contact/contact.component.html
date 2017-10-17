@@ -1,0 +1,32 @@
+<ActionBar title="Contact Us" class="action-bar">
+    <NavigationButton text="Menu" icon="res://ic_drawer" (tap)="openDrawer()"></NavigationButton>
+</ActionBar>
+<RadSideDrawer #drawerComponent tkToggleNavButton showOverNavigation="true">
+    <ScrollView tkDrawerContent class="sidedrawer-left">
+        <StackLayout horizontalAlign="left">
+            <drawer-content></drawer-content>
+        </StackLayout>
+    </ScrollView>
+    <ScrollView orientation="vertical" tkMainContent class="page">
+        <GridLayout class="m-5" rows="auto">
+            <StackLayout row="0" class="p-10 border">
+
+                <Label text="Contact Information" class="h2"></Label>
+                <Label text="
+                    121, Clear Water Bay Road
+                    Clear Water Bay, Kowloon
+                    HONG KONG
+                    Tel: +852 1234 5678
+                    Fax: +852 8765 4321
+                    Email:confusion@food.net" textWrap="true" class="body"></Label>
+
+                <GridLayout orientation="horizontal" rows="*" columns="*, *" class="m-t-20">
+                    <Button row="0" col="0" [text]="('fa-phone' | fonticon) + ' Call'" class="btn btn-rounded-sm btn-outline no-border fa " (tap)="callRestaurant()"></Button>
+                    <Button row="0" col="1" [text]="('fa-envelope-o' | fonticon) + ' Email'" class="btn btn-rounded-sm btn-outline no-border fa"
+                        (tap)="sendEmail()"></Button>
+                </GridLayout>
+                
+            </StackLayout>
+        </GridLayout>
+    </ScrollView>
+</RadSideDrawer>

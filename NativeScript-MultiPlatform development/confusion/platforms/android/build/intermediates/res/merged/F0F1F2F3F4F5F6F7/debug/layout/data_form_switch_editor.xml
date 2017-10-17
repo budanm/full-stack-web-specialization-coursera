@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.SwitchCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/data_form_switch_editor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/data_form_editor_height"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:textSize="@dimen/data_form_editor_header_text_size"
+    android:textColor="?android:attr/textColorTertiary"
+    android:paddingLeft="@dimen/data_form_editor_padding_horizontal"
+    android:paddingRight="@dimen/data_form_editor_padding_horizontal"/>

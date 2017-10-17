@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/data_form_label_editor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/data_form_editor_height"
+    android:freezesText="true"
+    android:textColor="?attr/editTextColor"
+    android:paddingLeft="@dimen/data_form_editor_padding_horizontal"
+    android:paddingRight="@dimen/data_form_editor_padding_horizontal"
+    android:paddingTop="10dp"
+    android:paddingBottom="11dp"
+    android:textSize="@dimen/data_form_editor_text_size"/>

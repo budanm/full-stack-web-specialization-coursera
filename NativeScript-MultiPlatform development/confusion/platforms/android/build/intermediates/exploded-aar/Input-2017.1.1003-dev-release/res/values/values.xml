@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="autocomplete_primary">#1886A1</color>
+    <color name="data_form_invalid_validation_color">#C73339</color>
+    <color name="data_form_list_selected">#cccccc</color>
+    <color name="data_form_valid_validation_color">#4CAF50</color>
+    <color name="listItemTextColor">#DF000000</color>
+    <color name="token_normal">#E0E0E0</color>
+    <color name="token_selected">#6C6C6C</color>
+    <declare-styleable name="CalendarCellState"><attr format="boolean" name="state_calendar_cell_today"/></declare-styleable>
+    <declare-styleable name="CalendarTheme"><attr format="reference" name="calendarStyle"/></declare-styleable>
+    <declare-styleable name="RadCalendarView"><attr format="color" name="calendarBackground"/><attr format="boolean" name="tkShowTitle"/><attr format="boolean" name="showDayNames"/><attr format="boolean" name="showGridLines"/><attr format="boolean" name="showCellDecorations"/><attr format="enum" name="selectionMode"><enum name="Single" value="0"/><enum name="Range" value="1"/><enum name="Multiple" value="2"/></attr><attr format="enum" name="displayMode"><enum name="Month" value="0"/><enum name="Year" value="1"/><enum name="Week" value="2"/></attr><attr format="enum" name="weekNumberDisplayMode"><enum name="None" value="0"/><enum name="Inline" value="1"/><enum name="Block" value="2"/></attr><attr format="boolean" name="isYearModeCompact"/></declare-styleable>
+    <dimen name="autocomplete_icon_spacing">10dp</dimen>
+    <dimen name="autocomplete_min_text_width">80dp</dimen>
+    <dimen name="data_form_editor_header_text_size">12sp</dimen>
+    <dimen name="data_form_editor_height">42dp</dimen>
+    <dimen name="data_form_editor_margin_horizontal">12dp</dimen>
+    <dimen name="data_form_editor_padding_horizontal">4dp</dimen>
+    <dimen name="data_form_editor_padding_vertical">8dp</dimen>
+    <dimen name="data_form_editor_text_size">16sp</dimen>
+    <dimen name="data_form_editor_validation_text_size">13sp</dimen>
+    <dimen name="date_text_size_year_mode">10sp</dimen>
+</resources>

@@ -1,0 +1,8 @@
+
+android {
+    productFlavors {
+        "F5" {
+            dimension "nativescriptproui"
+        }
+    }
+}

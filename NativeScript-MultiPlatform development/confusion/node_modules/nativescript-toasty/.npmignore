@@ -1,0 +1,8 @@
+demo/
+scripts/
+*.png
+*.log
+*.map
+*.ts
+!*.d.ts
+manual_typings/

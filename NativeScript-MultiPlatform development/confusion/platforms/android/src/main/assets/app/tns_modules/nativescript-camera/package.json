@@ -1,0 +1,99 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "nativescript-camera",
+        "scope": null,
+        "escapedName": "nativescript-camera",
+        "name": "nativescript-camera",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\Android\\NativeScriptApps\\confusion"
+    ]
+  ],
+  "_from": "nativescript-camera@latest",
+  "_id": "nativescript-camera@3.1.2",
+  "_inCache": true,
+  "_location": "/nativescript-camera",
+  "_nodeVersion": "6.11.3",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/nativescript-camera-3.1.2.tgz_1505827292398_0.6502737270202488"
+  },
+  "_npmUser": {
+    "name": "tns-bot",
+    "email": "nativescript@telerik.com"
+  },
+  "_npmVersion": "4.6.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "nativescript-camera",
+    "scope": null,
+    "escapedName": "nativescript-camera",
+    "name": "nativescript-camera",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-camera/-/nativescript-camera-3.1.2.tgz",
+  "_shasum": "42c73d83774571b7a65cfa22c7f65b291064d7f2",
+  "_shrinkwrap": null,
+  "_spec": "nativescript-camera",
+  "_where": "C:\\Android\\NativeScriptApps\\confusion",
+  "author": {
+    "name": "NativeScript team"
+  },
+  "dependencies": {},
+  "description": "Provides API for using device camera",
+  "devDependencies": {
+    "tns-core-modules": "^3.0.0",
+    "tns-platform-declarations": "^3.0.0",
+    "typescript": "~2.2.2"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "42c73d83774571b7a65cfa22c7f65b291064d7f2",
+    "tarball": "https://registry.npmjs.org/nativescript-camera/-/nativescript-camera-3.1.2.tgz"
+  },
+  "keywords": [
+    "NativeScript",
+    "camera",
+    "gallery",
+    "images"
+  ],
+  "main": "nativescript-camera",
+  "maintainers": [
+    {
+      "name": "tns-bot",
+      "email": "nativescript@telerik.com"
+    },
+    {
+      "name": "panayot.cankov",
+      "email": "panayot.cankov@telerik.com"
+    },
+    {
+      "name": "vakrilov",
+      "email": "alexander.vakrilov@gmail.com"
+    },
+    {
+      "name": "hhristov",
+      "email": "hristo.hristov@outlook.com"
+    }
+  ],
+  "name": "nativescript-camera",
+  "nativescript": {
+    "platforms": {
+      "android": "3.0.0",
+      "ios": "3.0.0"
+    }
+  },
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "version": "3.1.2"
+}

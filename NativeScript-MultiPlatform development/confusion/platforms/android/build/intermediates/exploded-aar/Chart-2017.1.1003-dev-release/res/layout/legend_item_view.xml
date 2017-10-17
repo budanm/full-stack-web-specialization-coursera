@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.telerik.widget.primitives.legend.RadLegendItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:focusable="true"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/legendItemIconView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:minWidth="15dp"
+        android:minHeight="15dp" />
+
+    <TextView
+        android:id="@+id/legendItemTitleView"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</com.telerik.widget.primitives.legend.RadLegendItemView>

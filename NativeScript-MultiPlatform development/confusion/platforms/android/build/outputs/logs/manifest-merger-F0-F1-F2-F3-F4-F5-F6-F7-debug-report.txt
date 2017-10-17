@@ -1,0 +1,240 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:2:1-43:12
+	package
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:3:2-38
+		INJECTED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml
+		INJECTED from C:\Android\NativeScriptApps\confusion\platforms\android\src\F0\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:5:2-27
+		INJECTED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:5:2-27
+		INJECTED from C:\Android\NativeScriptApps\confusion\platforms\android\src\F0\AndroidManifest.xml
+	android:versionCode
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:4:2-25
+		INJECTED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:4:2-25
+		INJECTED from C:\Android\NativeScriptApps\confusion\platforms\android\src\F0\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:2:11-69
+supports-screens
+ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:7:2-11:33
+	android:largeScreens
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:10:3-30
+	android:smallScreens
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:8:3-30
+	android:normalScreens
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:9:3-31
+	android:xlargeScreens
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:11:3-31
+uses-sdk
+ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:13:2-15:34
+MERGED from [confusion:runtime:unspecified] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\confusion\runtime\unspecified\AndroidManifest.xml:7:5-9:41
+MERGED from [com.couchbase.lite:couchbase-lite-android:1.3.1] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.couchbase.lite\couchbase-lite-android\1.3.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.couchbase.lite:couchbase-lite-android-sqlite-custom:1.3.1] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.couchbase.lite\couchbase-lite-android-sqlite-custom\1.3.1\AndroidManifest.xml:7:5-9:41
+MERGED from [:Chart-2017.1.1003-dev-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Chart-2017.1.1003-dev-release\AndroidManifest.xml:7:5-9:41
+MERGED from [:Common-2017.1.1003-dev-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Common-2017.1.1003-dev-release\AndroidManifest.xml:7:5-9:41
+MERGED from [:Data-2017.1.1003-dev-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Data-2017.1.1003-dev-release\AndroidManifest.xml:7:5-9:41
+MERGED from [:Feedback-2017.1.1003-dev-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Feedback-2017.1.1003-dev-release\AndroidManifest.xml:7:5-9:41
+MERGED from [:Gauges-2017.1.1003-dev-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Gauges-2017.1.1003-dev-release\AndroidManifest.xml:7:5-9:41
+MERGED from [:Input-2017.1.1003-dev-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Input-2017.1.1003-dev-release\AndroidManifest.xml:7:5-9:41
+MERGED from [:List-2017.1.1003-dev-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\List-2017.1.1003-dev-release\AndroidManifest.xml:7:5-9:41
+MERGED from [:Primitives-2017.1.1003-dev-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Primitives-2017.1.1003-dev-release\AndroidManifest.xml:7:5-9:41
+MERGED from [:widgets-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\widgets-release\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:25.3.1] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\design\25.3.1\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.3.1\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.3.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.3.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.3.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.1] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\transition\25.3.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\26.1.0\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\support-media-compat\26.1.0\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\support-fragment\26.1.0\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\support-core-ui\26.1.0\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\support-core-utils\26.1.0\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.1.0] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\support-compat\26.1.0\AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\android.arch.lifecycle\runtime\1.0.0\AndroidManifest.xml:20:5-22:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.3.1] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\design\25.3.1\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:15:3-32
+		INJECTED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml
+		INJECTED from C:\Android\NativeScriptApps\confusion\platforms\android\src\F0\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:14:3-29
+		INJECTED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml
+		INJECTED from C:\Android\NativeScriptApps\confusion\platforms\android\src\F0\AndroidManifest.xml
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:17:2-76
+MERGED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:17:2-76
+	android:name
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:17:19-74
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:18:2-77
+	android:name
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:18:19-75
+uses-permission#android.permission.INTERNET
+ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:19:2-63
+MERGED from [com.couchbase.lite:couchbase-lite-android:1.3.1] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.couchbase.lite\couchbase-lite-android\1.3.1\AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:19:19-61
+application
+ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:21:2-42:16
+MERGED from C:\Android\NativeScriptApps\confusion\platforms\android\src\F3\AndroidManifest.xml:6:3-14:17
+MERGED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:21:2-42:16
+MERGED from [com.couchbase.lite:couchbase-lite-android:1.3.1] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.couchbase.lite\couchbase-lite-android\1.3.1\AndroidManifest.xml:14:5-20
+MERGED from [com.couchbase.lite:couchbase-lite-android-sqlite-custom:1.3.1] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.couchbase.lite\couchbase-lite-android-sqlite-custom\1.3.1\AndroidManifest.xml:11:5-20
+MERGED from [:Chart-2017.1.1003-dev-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Chart-2017.1.1003-dev-release\AndroidManifest.xml:11:5-12:19
+MERGED from [:Common-2017.1.1003-dev-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Common-2017.1.1003-dev-release\AndroidManifest.xml:11:5-12:19
+MERGED from [:Data-2017.1.1003-dev-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Data-2017.1.1003-dev-release\AndroidManifest.xml:11:5-12:19
+MERGED from [:Feedback-2017.1.1003-dev-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Feedback-2017.1.1003-dev-release\AndroidManifest.xml:11:5-32:19
+MERGED from [:Gauges-2017.1.1003-dev-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Gauges-2017.1.1003-dev-release\AndroidManifest.xml:11:5-12:19
+MERGED from [:Input-2017.1.1003-dev-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Input-2017.1.1003-dev-release\AndroidManifest.xml:11:5-12:19
+MERGED from [:List-2017.1.1003-dev-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\List-2017.1.1003-dev-release\AndroidManifest.xml:11:5-12:19
+MERGED from [:Primitives-2017.1.1003-dev-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Primitives-2017.1.1003-dev-release\AndroidManifest.xml:11:5-12:19
+MERGED from [:widgets-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\widgets-release\AndroidManifest.xml:11:5-12:19
+MERGED from [com.android.support:design:25.3.1] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\design\25.3.1\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.3.1\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.3.1\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.3.1\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\transition\25.3.1\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:26.1.0] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\support-media-compat\26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\support-fragment\26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\support-core-ui\26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\support-core-utils\26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\support-compat\26.1.0\AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\android.arch.lifecycle\runtime\1.0.0\AndroidManifest.xml:24:5-28:19
+	android:label
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:25:3-35
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:25:3-35
+	android:allowBackup
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:23:3-29
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:23:3-29
+	android:icon
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:24:3-32
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:24:3-32
+	android:theme
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:26:3-34
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:26:3-34
+	android:name
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:22:3-49
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:22:3-49
+activity#com.tns.NativeScriptActivity
+ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:28:3-40:14
+	android:label
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:30:4-49
+	android:configChanges
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:31:4-65
+	android:theme
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:32:4-44
+	android:name
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:29:4-47
+meta-data#SET_THEME_ON_LAUNCH
+ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:34:4-87
+	android:resource
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:34:50-84
+	android:name
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:34:15-49
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:36:4-39:20
+action#android.intent.action.MAIN
+ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:37:5-57
+	android:name
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:37:13-54
+category#android.intent.category.LAUNCHER
+ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:38:5-65
+	android:name
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:38:15-62
+activity#com.tns.ErrorReportActivity
+ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:41:3-57
+	android:name
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\main\AndroidManifest.xml:41:13-55
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\F3\AndroidManifest.xml:4:3-79
+	android:name
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\F3\AndroidManifest.xml:4:20-76
+activity#com.telerik.localnotifications.NotificationClickedActivity
+ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\F3\AndroidManifest.xml:7:5-90
+	android:name
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\F3\AndroidManifest.xml:7:15-88
+receiver#com.telerik.localnotifications.NotificationPublisher
+ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\F3\AndroidManifest.xml:8:5-109
+	android:exported
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\F3\AndroidManifest.xml:8:83-107
+	android:name
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\F3\AndroidManifest.xml:8:15-82
+receiver#com.telerik.localnotifications.NotificationRestoreReceiver
+ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\F3\AndroidManifest.xml:9:5-13:16
+	android:exported
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\F3\AndroidManifest.xml:9:89-113
+	android:name
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\F3\AndroidManifest.xml:9:15-88
+intent-filter#android.intent.action.BOOT_COMPLETED
+ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\F3\AndroidManifest.xml:10:7-12:23
+action#android.intent.action.BOOT_COMPLETED
+ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\F3\AndroidManifest.xml:11:9-71
+	android:name
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\F3\AndroidManifest.xml:11:17-68
+uses-permission#android.permission.CALL_PHONE
+ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\F4\AndroidManifest.xml:4:2-66
+	android:name
+		ADDED from C:\Android\NativeScriptApps\confusion\platforms\android\src\F4\AndroidManifest.xml:4:19-63
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.couchbase.lite:couchbase-lite-android:1.3.1] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.couchbase.lite\couchbase-lite-android\1.3.1\AndroidManifest.xml:12:5-79
+	android:name
+		ADDED from [com.couchbase.lite:couchbase-lite-android:1.3.1] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.couchbase.lite\couchbase-lite-android\1.3.1\AndroidManifest.xml:12:22-76
+activity#com.telerik.widget.feedback.SendFeedbackActivity
+ADDED from [:Feedback-2017.1.1003-dev-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Feedback-2017.1.1003-dev-release\AndroidManifest.xml:12:9-16:20
+	android:label
+		ADDED from [:Feedback-2017.1.1003-dev-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Feedback-2017.1.1003-dev-release\AndroidManifest.xml:14:13-65
+	android:theme
+		ADDED from [:Feedback-2017.1.1003-dev-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Feedback-2017.1.1003-dev-release\AndroidManifest.xml:15:13-50
+	android:name
+		ADDED from [:Feedback-2017.1.1003-dev-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Feedback-2017.1.1003-dev-release\AndroidManifest.xml:13:13-76
+activity#com.telerik.widget.feedback.ViewFeedbackActivity
+ADDED from [:Feedback-2017.1.1003-dev-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Feedback-2017.1.1003-dev-release\AndroidManifest.xml:17:9-21:20
+	android:label
+		ADDED from [:Feedback-2017.1.1003-dev-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Feedback-2017.1.1003-dev-release\AndroidManifest.xml:19:13-65
+	android:theme
+		ADDED from [:Feedback-2017.1.1003-dev-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Feedback-2017.1.1003-dev-release\AndroidManifest.xml:20:13-50
+	android:name
+		ADDED from [:Feedback-2017.1.1003-dev-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Feedback-2017.1.1003-dev-release\AndroidManifest.xml:18:13-76
+activity#com.telerik.widget.feedback.ViewFeedbackItemActivity
+ADDED from [:Feedback-2017.1.1003-dev-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Feedback-2017.1.1003-dev-release\AndroidManifest.xml:22:9-26:20
+	android:label
+		ADDED from [:Feedback-2017.1.1003-dev-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Feedback-2017.1.1003-dev-release\AndroidManifest.xml:24:13-65
+	android:theme
+		ADDED from [:Feedback-2017.1.1003-dev-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Feedback-2017.1.1003-dev-release\AndroidManifest.xml:25:13-50
+	android:name
+		ADDED from [:Feedback-2017.1.1003-dev-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Feedback-2017.1.1003-dev-release\AndroidManifest.xml:23:13-80
+activity#com.telerik.widget.feedback.EditDetailsActivity
+ADDED from [:Feedback-2017.1.1003-dev-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Feedback-2017.1.1003-dev-release\AndroidManifest.xml:27:9-31:20
+	android:label
+		ADDED from [:Feedback-2017.1.1003-dev-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Feedback-2017.1.1003-dev-release\AndroidManifest.xml:29:13-64
+	android:theme
+		ADDED from [:Feedback-2017.1.1003-dev-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Feedback-2017.1.1003-dev-release\AndroidManifest.xml:30:13-50
+	android:name
+		ADDED from [:Feedback-2017.1.1003-dev-release:] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Feedback-2017.1.1003-dev-release\AndroidManifest.xml:28:13-75
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:25.3.1] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\design\25.3.1\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.3.1\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.3.1\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.3.1\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.3.1\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\transition\25.3.1\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-media-compat:26.1.0] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\support-media-compat\26.1.0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\support-fragment\26.1.0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\support-core-ui\26.1.0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\support-core-utils\26.1.0\AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\support-compat\26.1.0\AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:design:25.3.1] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\design\25.3.1\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:design:25.3.1] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\design\25.3.1\AndroidManifest.xml:26:9-47
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\android.arch.lifecycle\runtime\1.0.0\AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\android.arch.lifecycle\runtime\1.0.0\AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\android.arch.lifecycle\runtime\1.0.0\AndroidManifest.xml:26:13-58

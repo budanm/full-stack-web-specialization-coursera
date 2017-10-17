@@ -1,0 +1,40 @@
+<GridLayout class="sidedrawer-header" rows="auto" columns="100, *">
+    <Image row="0" col="0" src="res://rcflogo" class="sidedrawer-header-image"></Image>
+    <Label row="0" col="1" text="Ristorante Con Fusion" class="sidedrawer-header-brand" textWrap="true"></Label>
+</GridLayout>
+<StackLayout class="sidedrawer-content" orientation="vertical">
+    <GridLayout class="sidedrawer-list-item" rows="*" columns="50, *" orientation="horizontal" [nsRouterLink]="['/auth']" clearHistory="true">
+        <Label row="0" col="0" class="sidedrawer-list-item-text fa" [text]="'fa-sign-in' | fonticon"></Label>
+        <Label row="0" col="1" class="sidedrawer-list-item-text" text="Login"></Label>
+    </GridLayout>
+    <GridLayout class="sidedrawer-list-item" rows="*" columns="50, *" orientation="horizontal" [nsRouterLink]="['/home']" clearHistory="true">
+        <Label row="0" col="0" class="sidedrawer-list-item-text fa" [text]="'fa-home' | fonticon"></Label>
+        <Label row="0" col="1" class="sidedrawer-list-item-text" text="Home"></Label>
+    </GridLayout>
+    <GridLayout class="sidedrawer-list-item" rows="*" columns="50, *" orientation="horizontal" [nsRouterLink]="['/about']" clearHistory="true">
+        <Label row="0" col="0" class="sidedrawer-list-item-text fa" [text]="'fa-info-circle' | fonticon"></Label>
+        <Label row="0" col="1" class="sidedrawer-list-item-text" text="About Us"></Label>
+    </GridLayout>
+    <GridLayout class="sidedrawer-list-item" rows="*" columns="50, *" orientation="horizontal" [nsRouterLink]="['/menu']" clearHistory="true">
+        <Label row="0" col="0" class="sidedrawer-list-item-text fa" [text]="'fa-list' | fonticon"></Label>
+        <Label row="0" col="1" class="sidedrawer-list-item-text" text="Menu"></Label>
+    </GridLayout>
+    <GridLayout class="sidedrawer-list-item" rows="*" columns="50, *" orientation="horizontal" [nsRouterLink]="['/contact']"
+        clearHistory="true">
+        <Label row="0" col="0" class="sidedrawer-list-item-text fa" [text]="'fa-address-card' | fonticon"></Label>
+        <Label row="0" col="1" class="sidedrawer-list-item-text" text="Contact Us"></Label>
+    </GridLayout>
+
+
+    <GridLayout class="sidedrawer-list-item" rows="*" columns="50, *" orientation="horizontal" [nsRouterLink]="['/favorites']"
+        clearHistory="true">
+        <Label row="0" col="0" class="sidedrawer-list-item-text fa" [text]="'fa-heart' | fonticon"></Label>
+        <Label row="0" col="1" class="sidedrawer-list-item-text" text="My Favorites"></Label>
+    </GridLayout>
+
+    <GridLayout class="sidedrawer-list-item" rows="*" columns="50, *" orientation="horizontal" [nsRouterLink]="['/reservation']"
+        clearHistory="true">
+        <Label row="0" col="0" class="sidedrawer-list-item-text fa" [text]="'fa-cutlery' | fonticon"></Label>
+        <Label row="0" col="1" class="sidedrawer-list-item-text" text="Reserve Table"></Label>
+    </GridLayout>
+</StackLayout>

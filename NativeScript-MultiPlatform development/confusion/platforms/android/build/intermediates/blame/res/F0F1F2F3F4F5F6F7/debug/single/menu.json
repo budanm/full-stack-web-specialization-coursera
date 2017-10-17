@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1F2F3F4F5F6F7\\debug\\menu\\send_feedback_activity_menu.xml",
+        "source": "C:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\build\\intermediates\\exploded-aar\\Feedback-2017.1.1003-dev-release\\res\\menu\\send_feedback_activity_menu.xml"
+    },
+    {
+        "merged": "C:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1F2F3F4F5F6F7\\debug\\menu\\view_feedback_items_activity_menu.xml",
+        "source": "C:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\build\\intermediates\\exploded-aar\\Feedback-2017.1.1003-dev-release\\res\\menu\\view_feedback_items_activity_menu.xml"
+    },
+    {
+        "merged": "C:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1F2F3F4F5F6F7\\debug\\menu\\edit_details.xml",
+        "source": "C:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\build\\intermediates\\exploded-aar\\Feedback-2017.1.1003-dev-release\\res\\menu\\edit_details.xml"
+    }
+]

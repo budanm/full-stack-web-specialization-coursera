@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1F2F3F4F5F6F7\\debug\\drawable-xxhdpi\\icon.png",
+        "source": "C:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\src\\main\\res\\drawable-xxhdpi\\icon.png"
+    },
+    {
+        "merged": "C:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1F2F3F4F5F6F7\\debug\\drawable-xxhdpi\\ic_drawer.png",
+        "source": "C:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\src\\main\\res\\drawable-xxhdpi\\ic_drawer.png"
+    },
+    {
+        "merged": "C:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1F2F3F4F5F6F7\\debug\\drawable-xxhdpi\\background.png",
+        "source": "C:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\src\\main\\res\\drawable-xxhdpi\\background.png"
+    },
+    {
+        "merged": "C:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1F2F3F4F5F6F7\\debug\\drawable-xxhdpi\\rcflogo.png",
+        "source": "C:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\src\\main\\res\\drawable-xxhdpi\\rcflogo.png"
+    },
+    {
+        "merged": "C:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\build\\intermediates\\res\\merged\\F0F1F2F3F4F5F6F7\\debug\\drawable-xxhdpi\\logo.png",
+        "source": "C:\\Android\\NativeScriptApps\\confusion\\platforms\\android\\src\\main\\res\\drawable-xxhdpi\\logo.png"
+    }
+]

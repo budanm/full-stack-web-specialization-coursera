@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="boolean" name="applyDefaultPalette"/>
+    <attr format="boolean" name="areBarsRounded"/>
+    <attr format="boolean" name="clipToPlotArea"/>
+    <attr format="float" name="gapLength"/>
+    <attr format="color" name="labelColor"/>
+    <attr format="string" name="labelFont"/>
+    <attr format="integer" name="labelFontStyle"/>
+    <attr format="string" name="labelFormat"/>
+    <attr format="dimension" name="labelMargin"/>
+    <attr format="dimension" name="labelSize"/>
+    <attr format="dimension" name="lineThickness"/>
+    <attr name="plotMode">
+        <enum name="BetweenTicks" value="0"/>
+        <enum name="OnTicks" value="1"/>
+        <enum name="OnTicksPadded" value="2"/>
+    </attr>
+    <attr format="float" name="roundBarsRadius"/>
+    <attr format="boolean" name="showLabels"/>
+    <attr format="dimension" name="strokeWidth"/>
+    <color name="red">#FFFF0000</color>
+    <declare-styleable name="AreaSeries"><attr name="fillColor"/></declare-styleable>
+    <declare-styleable name="Axis"><attr format="float" name="labelRotationAngle"/><attr name="lineThickness"/><attr format="enum" name="axisLastLabelVisibility"><enum name="Visible" value="0"/><enum name="Hidden" value="1"/><enum name="Clip" value="2"/></attr><attr name="labelSize"/><attr name="labelColor"/><attr name="labelMargin"/><attr name="labelFont"/><attr name="labelFontStyle"/><attr format="integer" name="majorTickOffset"/><attr format="integer" name="labelOffset"/><attr name="showLabels"/><attr name="labelFormat"/><attr format="enum" name="axisLabelFitMode"><enum name="None" value="0"/><enum name="Multiline" value="1"/><enum name="Rotate" value="2"/></attr><attr format="string" name="axisTitle"/><attr format="dimension" name="tickThickness"/><attr format="integer" name="labelInterval"/></declare-styleable>
+    <declare-styleable name="BarSeries"><attr name="strokeWidth"/><attr name="strokeColor"/><attr name="fillColor"/><attr name="areBarsRounded"/><attr name="roundBarsRadius"/></declare-styleable>
+    <declare-styleable name="CartesianAxis"><attr format="enum" name="horizontalLocation"><enum name="Left" value="0"/><enum name="Right" value="1"/></attr><attr format="enum" name="verticalLocation"><enum name="Bottom" value="0"/><enum name="Top" value="1"/></attr></declare-styleable>
+    <declare-styleable name="CartesianCustomAnnotation"><attr format="float" name="horizontalOffset"/><attr format="float" name="verticalOffset"/><attr format="reference" name="content"/><attr format="enum" name="horizontalAlignment"><enum name="left" value="0"/><enum name="center" value="1"/><enum name="right" value="2"/></attr><attr format="enum" name="verticalAlignment"><enum name="top" value="0"/><enum name="bottom" value="1"/><enum name="center" value="2"/></attr></declare-styleable>
+    <declare-styleable name="CartesianPlotBandAnnotation"><attr name="fillColor"/></declare-styleable>
+    <declare-styleable name="CartesianStrokedAnnotation"><attr name="strokeColor"/><attr name="strokeWidth"/><attr format="string" name="label"/></declare-styleable>
+    <declare-styleable name="CategoricalAxis"><attr format="integer" name="majorTickInterval"/><attr name="plotMode"/><attr name="gapLength"/></declare-styleable>
+    <declare-styleable name="CategoricalSeries"><attr format="enum" name="combineMode"><enum name="None" value="0"/><enum name="Cluster" value="1"/><enum name="Stack" value="2"/><enum name="Stack100" value="3"/></attr></declare-styleable>
+    <declare-styleable name="CategoricalStrokedSeries"><attr name="strokeColor"/><attr name="strokeWidth"/></declare-styleable>
+    <declare-styleable name="ChartAnnotation"><attr name="clipToPlotArea"/></declare-styleable>
+    <declare-styleable name="ChartSeries"><attr name="clipToPlotArea"/><attr name="showLabels"/><attr name="labelColor"/><attr name="labelSize"/><attr name="labelFont"/><attr name="labelFontStyle"/><attr name="labelFormat"/></declare-styleable>
+    <declare-styleable name="ChartTheme"><attr format="reference" name="AxisStyle"/><attr format="reference" name="CartesianAxisStyle"/><attr format="reference" name="CategoricalAxisStyle"/><attr format="reference" name="DateTimeCategoricalAxisStyle"/><attr format="reference" name="DateTimeContinuousAxisStyle"/><attr format="reference" name="RadChartBaseStyle"/><attr format="reference" name="ChartSeriesStyle"/><attr format="reference" name="LineAxisStyle"/><attr format="reference" name="BarSeriesStyle"/><attr format="reference" name="RangeBarSeriesStyle"/><attr format="reference" name="CategoricalSeriesStyle"/><attr format="reference" name="CategoricalStrokedSeriesStyle"/><attr format="reference" name="AreaSeriesStyle"/><attr format="reference" name="ChartAnnotationStyle"/><attr format="reference" name="CartesianStrokedAnnotationStyle"/><attr format="reference" name="CartesianPlotBandAnnotationStyle"/><attr format="reference" name="CartesianCustomAnnotationStyle"/><attr format="reference" name="TestBarSeriesStyle"/></declare-styleable>
+    <declare-styleable name="DateTimeCategoricalAxis"><attr format="string" name="dateFormat"/><attr format="enum" name="dateTimeComponent"><enum name="Year" value="0"/><enum name="Quarter" value="1"/><enum name="Month" value="2"/><enum name="Week" value="3"/><enum name="Hour" value="4"/><enum name="Minute" value="5"/><enum name="Second" value="6"/><enum name="Millisecond" value="7"/><enum name="Date" value="8"/><enum name="TimeOfDay" value="9"/><enum name="Day" value="10"/><enum name="DayOfWeek" value="11"/><enum name="DayOfYear" value="12"/></attr></declare-styleable>
+    <declare-styleable name="DateTimeContinuousAxis"><attr format="integer" name="maximumTicks"/><attr name="gapLength"/><attr format="float" name="majorStep"/><attr format="enum" name="majorStepUnit"><enum name="Year" value="0"/><enum name="Quarter" value="1"/><enum name="Month" value="2"/><enum name="Week" value="3"/><enum name="Day" value="4"/><enum name="Hour" value="5"/><enum name="Minute" value="6"/><enum name="Second" value="7"/><enum name="Millisecond" value="8"/></attr><attr name="plotMode"/></declare-styleable>
+    <declare-styleable name="LineAxis"><attr format="color" name="lineColor"/></declare-styleable>
+    <declare-styleable name="RadChartViewBase"><attr format="string" name="pan"/><attr format="string" name="chartZoom"/><attr format="string" name="maxZoom"/><attr format="boolean" name="clipToBounds"/><attr format="string" name="emptyContent"/><attr format="string" name="palette"/></declare-styleable>
+    <declare-styleable name="RangeBarSeries"><attr name="strokeWidth"/><attr name="strokeColor"/><attr name="fillColor"/><attr name="areBarsRounded"/><attr name="roundBarsRadius"/></declare-styleable>
+    <dimen name="trackball_indicator_radius">5dp</dimen>
+    <style name="AxisStyle">
+        <item name="lineThickness">1dp</item>
+        <item name="tickThickness">1dp</item>
+        <item name="labelSize">12sp</item>
+        <item name="labelMargin">2dp</item>
+    </style>
+    <style name="AxisStyle.LineAxisStyle">
+        <item name="lineColor">#000000</item>
+    </style>
+    <style name="AxisStyle.LineAxisStyle.CartesianAxisStyle">
+        <item name="verticalLocation">Bottom</item>
+    </style>
+    <style name="AxisStyle.LineAxisStyle.CartesianAxisStyle.CategoricalAxisStyle">
+        <item name="gapLength">0.3</item>
+    </style>
+    <style name="AxisStyle.LineAxisStyle.CartesianAxisStyle.CategoricalAxisStyle.DateTimeCategoricalAxisStyle">
+        <item name="dateTimeComponent">Date</item>
+    </style>
+    <style name="AxisStyle.LineAxisStyle.CartesianAxisStyle.CategoricalAxisStyle.TestDateTimeCategoricalAxisStyle">
+        <item name="dateTimeComponent">DayOfWeek</item>
+        <item name="dateFormat">ddmmyy</item>
+    </style>
+    <style name="AxisStyle.LineAxisStyle.CartesianAxisStyle.DateTimeContinuousAxisStyle">
+
+    </style>
+    <style name="ChartAnnotationStyle">
+        <item name="clipToPlotArea">true</item>
+    </style>
+    <style name="ChartAnnotationStyle.CartesianCustomAnnotationStyle">
+        <item name="horizontalAlignment">center</item>
+        <item name="verticalAlignment">center</item>
+    </style>
+    <style name="ChartAnnotationStyle.CartesianStrokedAnnotationStyle">
+        <item name="strokeColor">#ff0000</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+    <style name="ChartAnnotationStyle.CartesianStrokedAnnotationStyle.CartesianPlotBandAnnotationStyle">
+        <item name="fillColor">#aa0000ff</item>
+    </style>
+    <style name="ChartSeriesStyle">
+        <item name="labelSize">13sp</item>
+        <item name="showLabels">false</item>
+        <item name="labelColor">#000000</item>
+        <item name="labelFormat">%.2f</item>
+    </style>
+    <style name="ChartSeriesStyle.CategoricalSeriesStyle">
+        <item name="combineMode">None</item>
+    </style>
+    <style name="ChartSeriesStyle.CategoricalSeriesStyle.BarSeriesStyle">
+        <item name="fillColor">#ff0000</item>
+        <item name="strokeColor">#000000</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="areBarsRounded">false</item>
+        <item name="roundBarsRadius">5</item>
+    </style>
+    <style name="ChartSeriesStyle.CategoricalSeriesStyle.CategoricalStrokedSeriesStyle">
+        <item name="strokeColor">#ff3300</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+    <style name="ChartSeriesStyle.CategoricalSeriesStyle.CategoricalStrokedSeriesStyle.AreaSeriesStyle">
+        <item name="fillColor">#efae43</item>
+    </style>
+    <style name="ChartSeriesStyle.CategoricalSeriesStyle.RangeBarSeriesStyle">
+        <item name="fillColor">#ff0000</item>
+        <item name="strokeColor">#000000</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="areBarsRounded">false</item>
+        <item name="roundBarsRadius">5</item>
+    </style>
+    <style name="ChartSeriesStyle.CategoricalSeriesStyle.TestBarSeriesStyle">
+        <item name="fillColor">#ff00ff00</item>
+        <item name="strokeColor">#ff00ff00</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="areBarsRounded">true</item>
+        <item name="roundBarsRadius">2</item>
+    </style>
+    <style name="RadChartBaseStyle"/>
+    <style name="Theme.ChartTheme" parent="android:Theme.Light">
+        <item name="AxisStyle">@style/AxisStyle</item>
+        <item name="LineAxisStyle">@style/AxisStyle.LineAxisStyle</item>
+        <item name="CartesianAxisStyle">@style/AxisStyle.LineAxisStyle.CartesianAxisStyle</item>
+        <item name="CategoricalAxisStyle">
+            @style/AxisStyle.LineAxisStyle.CartesianAxisStyle.CategoricalAxisStyle
+        </item>
+        <item name="DateTimeCategoricalAxisStyle">
+            @style/AxisStyle.LineAxisStyle.CartesianAxisStyle.CategoricalAxisStyle.DateTimeCategoricalAxisStyle
+        </item>
+        <item name="DateTimeContinuousAxisStyle">
+            @style/AxisStyle.LineAxisStyle.CartesianAxisStyle.DateTimeContinuousAxisStyle
+        </item>
+        <item name="RadChartBaseStyle">@style/RadChartBaseStyle</item>
+        <item name="ChartSeriesStyle">@style/ChartSeriesStyle</item>
+        <item name="BarSeriesStyle">@style/ChartSeriesStyle.CategoricalSeriesStyle.BarSeriesStyle
+        </item>
+        <item name="RangeBarSeriesStyle">
+            @style/ChartSeriesStyle.CategoricalSeriesStyle.RangeBarSeriesStyle
+        </item>
+        <item name="CategoricalSeriesStyle">@style/ChartSeriesStyle.CategoricalSeriesStyle</item>
+        <item name="CategoricalStrokedSeriesStyle">
+            @style/ChartSeriesStyle.CategoricalSeriesStyle.CategoricalStrokedSeriesStyle
+        </item>
+        <item name="AreaSeriesStyle">
+            @style/ChartSeriesStyle.CategoricalSeriesStyle.CategoricalStrokedSeriesStyle.AreaSeriesStyle
+        </item>
+        <item name="ChartAnnotationStyle">@style/ChartAnnotationStyle</item>
+        <item name="CartesianStrokedAnnotationStyle">
+            @style/ChartAnnotationStyle.CartesianStrokedAnnotationStyle
+        </item>
+        <item name="CartesianPlotBandAnnotationStyle">
+            @style/ChartAnnotationStyle.CartesianStrokedAnnotationStyle.CartesianPlotBandAnnotationStyle
+        </item>
+        <item name="CartesianCustomAnnotationStyle">
+            @style/ChartAnnotationStyle.CartesianCustomAnnotationStyle
+        </item>
+    </style>
+</resources>

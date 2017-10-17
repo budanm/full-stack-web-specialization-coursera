@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\i312345\.gradle\caches\modules-2\files-2.1\com.couchbase.lite\couchbase-lite-java-core\1.3.1\3807f8d70802e9bee03617bc9d0b1a0bbbdab656\couchbase-lite-java-core-1.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3807f8d70802e9bee03617bc9d0b1a0bbbdab656">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\couchbase-lite-java-core-1.3.1_697c016769d8f5d7a38f3c5d82d30313236cbcb5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\confusion\runtime\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="eb6078500d1af5e7b663871706674405c57292a3">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\confusion-runtime-unspecified_2b51ad5d5174042dcd1e88f908e9ac731b6e61b2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\transition\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\com.android.support-transition-25.3.1_c752a9e29ba1b0e0c517e1d7a797c6fef8b4579c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\support-compat\26.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2442771a5590dd4eb4bce00c2e9dca9e22e4c963">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\com.android.support-support-compat-26.1.0_689de7fa791b94941f866bd5aa2df1683836844f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\android.arch.lifecycle\runtime\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b62fdc4cfef174c1e456014195c83fa7de7dc041">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\android.arch.lifecycle-runtime-1.0.0_d4b3919f69d43ec8f03386f90091a477ed30be45.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\i312345\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.6.2\f1bc476cc167b18e66c297df599b2377131a8947\gson-2.6.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="f1bc476cc167b18e66c297df599b2377131a8947">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\gson-2.6.2_8ce7a83aa687a1b5c3d4ed0f4fd946cab2fc9932.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\com.android.support-animated-vector-drawable-25.3.1_1070bf76176de284a7e3b9037261cd4c72ac2b22.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.couchbase.lite\couchbase-lite-android-sqlite-custom\1.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c82bc8adb671652b83ea2d785d0847435e4f3442">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\com.couchbase.lite-couchbase-lite-android-sqlite-custom-1.3.1_1a55f021a0b31d05cc6af5f3bff6e6f9baca1249.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\i312345\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\26.1.0\814258103cf26a15fcc26ecce35f5b7d24b73f8\support-annotations-26.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="0814258103cf26a15fcc26ecce35f5b7d24b73f8">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\support-annotations-26.1.0_4c5d67c78d2143254202463a376010588696987b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\com.android.support-support-vector-drawable-25.3.1_4a203d2e5f034b40f66e8e149a0efbe52f109b5b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\widgets-release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="dd431d6aa9ce9dc0d429fcd239d412a82ea0e9a7">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\intermediates-exploded-aar-widgets-release_6ec99d3f9bc9a24423869eb90a21f47a52106a09.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\List-2017.1.1003-dev-release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="ccf00b7aa2472bfe1e92931c49e46d9103742149">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\intermediates-exploded-aar-List-2017.1.1003-dev-release_0ab03a5880a206954fd1bd89a4933f1efb3ca0e9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\i312345\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.8.0\5ea7af56cc7c567ed9856d99efb30740e9b17ff\okio-1.8.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\okio-1.8.0_46b8270fdf99475f7d80b76b65eebb396b93d613.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\i312345\.gradle\caches\modules-2\files-2.1\android.arch.core\common\1.0.0\a2d487452376193fc8c103dd2b9bd5f2b1b44563\common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a2d487452376193fc8c103dd2b9bd5f2b1b44563">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\common-1.0.0_3b90fad2799f82b8418a0ab2d50aabae48584e9d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Chart-2017.1.1003-dev-release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="669d0795783c3d477c08aa18fb0457829a1292ac">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\intermediates-exploded-aar-Chart-2017.1.1003-dev-release_283b56a5f8f845b007dfc5b8dc1329dbf685c7d5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\NativeScriptApps\confusion\node_modules\nativescript-local-notifications\platforms\android\libs\localnotlib.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="49abc36c8871b5e5d0bc5d1f681056cc5fccb85f">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\localnotlib_661273d2a74a9f463571d5d1319d7e593a55b92a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\i312345\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.5.0\a2a55a3375bc1cef830ca426d68d2ea22961190e\jackson-annotations-2.5.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a2a55a3375bc1cef830ca426d68d2ea22961190e">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\jackson-annotations-2.5.0_de117040d52061b9eee91427b83daeab2ef8cc0e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\support-fragment\26.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7efef32744ca4a436492d5cf28c08698cc2af256">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\com.android.support-support-fragment-26.1.0_a1b40186aacd8c48e30dc81c8df0dd75ebbfe61b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\i312345\.gradle\caches\modules-2\files-2.1\android.arch.lifecycle\common\1.0.0\e414a4cb28434e25c4f6aa71426eb20cf4874ae9\common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e414a4cb28434e25c4f6aa71426eb20cf4874ae9">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\common-1.0.0_a5b29b731892ff4204cf4e569f4fc938d593e7bc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\i312345\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.5.0\489b7552dd3322b63f694122d16ce62c21c303b5\jackson-databind-2.5.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="489b7552dd3322b63f694122d16ce62c21c303b5">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\jackson-databind-2.5.0_456d04eab3288f036e839d759cfe9783442f24cb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\26.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\com.android.support-support-v4-26.1.0_b7b5e5f36d4355cef6c4a483d855ee958ffb469a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\i312345\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.3.1\19047bdb6a4fc00a44124f64ca98e88fc204e7e3\okhttp-3.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="19047bdb6a4fc00a44124f64ca98e88fc204e7e3">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\okhttp-3.3.1_f75ddc9000b66d6df098f75a33c66ed27e030e68.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Common-2017.1.1003-dev-release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="29bb374c9fd569ea5fad2e6729c255c3717382c9">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\intermediates-exploded-aar-Common-2017.1.1003-dev-release_2ab1207e1f769d956b0731a0222a484e6f64c4a3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\support-media-compat\26.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="f97cf85b0fe70d37a705111dafa6b1b418ea1650">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\com.android.support-support-media-compat-26.1.0_83f7c09c00c4bbd64b72a8f839133daa428dbacb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\design\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\com.android.support-design-25.3.1_830d09fffb29c44470d6f8a84cf0461f544d5e7c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Input-2017.1.1003-dev-release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7279ec5fcf43856d4563c37f6b911e6289500106">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\intermediates-exploded-aar-Input-2017.1.1003-dev-release_8a47dc876852d5a2fb3fbb4ace9f93ccd62b1172.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Gauges-2017.1.1003-dev-release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="763441cc6a990002aed18218e3bb277961816ea4">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\intermediates-exploded-aar-Gauges-2017.1.1003-dev-release_e47969fd7a07fd1478566f3de382a8432c1962d6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.couchbase.lite\couchbase-lite-android\1.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2ce3006140ca3087f08a9f0ba1211255253474c5">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\com.couchbase.lite-couchbase-lite-android-1.3.1_215493a3baca17dfb9e3f7b649c854236234a2f0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Feedback-2017.1.1003-dev-release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="99917b3cc83bb26c61fe0fa886ef55ee8005e9bf">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\intermediates-exploded-aar-Feedback-2017.1.1003-dev-release_f738dbec175061bcb631767bb3a0d1654523d4f6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\support-core-utils\26.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="233f60a165ae622c8b36731502ebbda0f65e1930">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\com.android.support-support-core-utils-26.1.0_7b5efe2c7edd1a7022266d37c340c1396eda9bdb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\i312345\.gradle\caches\modules-2\files-2.1\com.github.oxo42\stateless4j\2.4.0\128aca4ace585f0b42faa739d0b968a154debb7a\stateless4j-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="128aca4ace585f0b42faa739d0b968a154debb7a">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\stateless4j-2.4.0_2dd3c3770b35e333397baab2881dbcb59254766f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Data-2017.1.1003-dev-release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a690a9ad791e20a8e6bfa1f39c4df912499d2472">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\intermediates-exploded-aar-Data-2017.1.1003-dev-release_525b8772f8bffef99b844b1d83f81780a333b8a7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\i312345\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.5.0\b2ece1bd57ac7b4c315b7505b65ac79cb1da4270\jackson-core-2.5.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b2ece1bd57ac7b4c315b7505b65ac79cb1da4270">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\jackson-core-2.5.0_2bcf8d01d150f57e99cb31992f6090c2b478404e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\com.android.support-recyclerview-v7-25.3.1_4f038c876a11f8a441135bb5eb83f7c80ce10a58.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\com.android.support-appcompat-v7-25.3.1_f39e9efac035eda1d7d2404d0ae49ef984c79f34.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\com.android.support\support-core-ui\26.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="508f50705b4fde51a16259f29c854201a3044516">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\com.android.support-support-core-ui-26.1.0_0bf75599b45ec36df2ef6869cd4afd5a98887095.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\Primitives-2017.1.1003-dev-release\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="dea5032193895bd143e997736b2842b1dffd1dcf">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\intermediates-exploded-aar-Primitives-2017.1.1003-dev-release_16f50ea3a78a7e63447d759ebf9339aaeb9940db.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\exploded-aar\confusion\runtime\unspecified\jars\libs\binding-generator.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a3e74f5f1ebe12c7cfa6591158ef298c95a5275f">
+        <dex dex="C:\Android\NativeScriptApps\confusion\platforms\android\build\intermediates\pre-dexed\F0F1F2F3F4F5F6F7\debug\binding-generator_dd5f15780cfc1361162118ba2aaf1a6db68ca2b4.jar" />
+    </item>
+
+</items>

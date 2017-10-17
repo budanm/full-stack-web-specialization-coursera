@@ -1,0 +1,115 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "nativescript-phone",
+        "scope": null,
+        "escapedName": "nativescript-phone",
+        "name": "nativescript-phone",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\Android\\NativeScriptApps\\confusion"
+    ]
+  ],
+  "_from": "nativescript-phone@latest",
+  "_id": "nativescript-phone@1.3.1",
+  "_inCache": true,
+  "_location": "/nativescript-phone",
+  "_nodeVersion": "7.5.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/nativescript-phone-1.3.1.tgz_1501004997329_0.005732913734391332"
+  },
+  "_npmUser": {
+    "name": "bradmartin",
+    "email": "bradmartin0905@gmail.com"
+  },
+  "_npmVersion": "3.10.5",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "nativescript-phone",
+    "scope": null,
+    "escapedName": "nativescript-phone",
+    "name": "nativescript-phone",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nativescript-phone/-/nativescript-phone-1.3.1.tgz",
+  "_shasum": "d1718c51a06c5f834e4456264e31e862cd845fa2",
+  "_shrinkwrap": null,
+  "_spec": "nativescript-phone",
+  "_where": "C:\\Android\\NativeScriptApps\\confusion",
+  "author": {
+    "name": "Mike Sywensky",
+    "email": "michael.sywensky@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/msywensky/nativescript-phone/issues"
+  },
+  "contributors": [
+    {
+      "name": "Brad Martin",
+      "email": " bradwaynemartin@gmail.com",
+      "url": "https://github.com/bradmartin"
+    },
+    {
+      "name": "Witold Czaplewski",
+      "url": "https://github.com/witi83"
+    }
+  ],
+  "dependencies": {
+    "nativescript-permissions": "1.2.3"
+  },
+  "description": "NativeScript plugin to use the device phone and SMS features for Android and iOS",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "d1718c51a06c5f834e4456264e31e862cd845fa2",
+    "tarball": "https://registry.npmjs.org/nativescript-phone/-/nativescript-phone-1.3.1.tgz"
+  },
+  "gitHead": "174b64ebf17f4c3445b25c24a59c66c34875af84",
+  "homepage": "https://github.com/msywensky/nativescript-phone",
+  "keywords": [
+    "NativeScript",
+    "Phone",
+    "SMS"
+  ],
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/msywensky/nativescript-phone/blob/master/LICENSE"
+  },
+  "main": "index",
+  "maintainers": [
+    {
+      "name": "bradmartin",
+      "email": "bradmartin0905@gmail.com"
+    },
+    {
+      "name": "msywensky",
+      "email": "michael.sywensky@gmail.com"
+    }
+  ],
+  "name": "nativescript-phone",
+  "nativescript": {
+    "platforms": {
+      "android": "1.0.0",
+      "ios": "1.0.0"
+    }
+  },
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msywensky/nativescript-phone.git"
+  },
+  "scripts": {},
+  "typings": "index.d.ts",
+  "version": "1.3.1"
+}
