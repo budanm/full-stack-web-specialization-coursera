@@ -8,7 +8,68 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var users = require('./routes/users');
 
+//############# db connection configuraion ######
+const mongoose = require('mongoose');
+mongoose.Promise = require('bluebird');
+const Dishes = require('./models/dishes');
+const Leaders = require('./models/leaders');
+const Promotions = require('./models/promotions');
+
+
 var app = express();
+
+
+// Connection URL
+const url = 'mongodb://localhost:27017/conFusion';
+const connect = mongoose.connect(url, {
+  useMongoClient: true,
+  /* other options */
+});
+
+connect.then((db) => {
+  console.log("Connected correctly to server");
+}, (err) => { console.log(err); });
+
+//############# db connection configuraion end ######
+
+
+//############ Authorization handler #################
+
+function auth(req, res, next) {
+
+  console.log(req.headers);
+  var authHeader = req.headers.authorization;
+
+  if (!authHeader) {
+
+    var err = new Error('You are not authenticated');
+    res.setHeader('WWW-Authenticate', 'Basic');
+    err.status = 401;
+    next(err);
+    return;
+  }
+
+  var auth = new Buffer(authHeader.split(' ')[1], 'base64').toString().split(':');
+
+  var user = auth[0];
+  var pass = auth[1];
+  if (user == 'admin' && pass == 'password') {
+    next(); // authorized
+  } else {
+    var err = new Error('You are not authenticated!');
+    res.setHeader('WWW-Authenticate', 'Basic');
+    err.status = 401;
+    next(err);
+  }
+
+
+}
+
+app.use(auth);
+//###################################################
+
+
+
 
 var dishRouter = require('./routes/dishRouter');
 var promoRouter = require('./routes/promoRouter');
@@ -26,23 +87,29 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+
+
+
+
+
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use('/users', users);
-app.use('/dishes',dishRouter);
-app.use('/promotions',promoRouter);
-app.use('/leaders',leaderRouter);
+app.use('/dishes', dishRouter);
+app.use('/promotions', promoRouter);
+app.use('/leaders', leaderRouter);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   var err = new Error('Not Found');
   err.status = 404;
   next(err);
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
