@@ -5,20 +5,29 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var index = require('./routes/index');
-var users = require('./routes/users');
 
-//############# db connection configuraion ######
+
+//###### EXPRESS GENERATED APP #############
+var app = express();
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'jade');
+
+// uncomment after placing your favicon in /public
+//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(logger('dev'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cookieParser('12345-67890-09876-54321'));
+app.use(express.static(path.join(__dirname, 'public')));
+//##########################################
+
+//############# DB CONNECTION CONFIG ######
 const mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
 const Dishes = require('./models/dishes');
 const Leaders = require('./models/leaders');
 const Promotions = require('./models/promotions');
-
-
-var app = express();
-
-
 // Connection URL
 const url = 'mongodb://localhost:27017/conFusion';
 const connect = mongoose.connect(url, {
@@ -30,38 +39,51 @@ connect.then((db) => {
   console.log("Connected correctly to server");
 }, (err) => { console.log(err); });
 
-//############# db connection configuraion end ######
+//############################################
 
 
-//############ Authorization handler #################
+//############ AUTHORIZATION #################
 
 function auth(req, res, next) {
 
   console.log(req.headers);
-  var authHeader = req.headers.authorization;
+  if (!req.signedCookies.user) {
+    var authHeader = req.headers.authorization;
 
-  if (!authHeader) {
+    if (!authHeader) {
 
-    var err = new Error('You are not authenticated');
-    res.setHeader('WWW-Authenticate', 'Basic');
-    err.status = 401;
-    next(err);
-    return;
-  }
+      var err = new Error('You are not authenticated');
+      res.setHeader('WWW-Authenticate', 'Basic');
+      err.status = 401;
+      next(err);
+      return;
+    }
 
-  var auth = new Buffer(authHeader.split(' ')[1], 'base64').toString().split(':');
+    var auth = new Buffer(authHeader.split(' ')[1], 'base64').toString().split(':');
 
-  var user = auth[0];
-  var pass = auth[1];
-  if (user == 'admin' && pass == 'password') {
-    next(); // authorized
+    var user = auth[0];
+    var pass = auth[1];
+    if (user == 'admin' && pass == 'password') {
+      res.cookie('user', 'admin', { signed: true });
+      next(); // authorized
+    } else {
+      var err = new Error('You are not authenticated!');
+      res.setHeader('WWW-Authenticate', 'Basic');
+      err.status = 401;
+      next(err);
+    }
   } else {
-    var err = new Error('You are not authenticated!');
-    res.setHeader('WWW-Authenticate', 'Basic');
-    err.status = 401;
-    next(err);
-  }
 
+    console.log(req.signedCookies);
+    if (req.signedCookies.user === 'admin') {
+      next();
+    }
+    else {
+      var err = new Error('You are not authenticated!');
+      err.status = 401;
+      next(err);
+    }
+  }
 
 }
 
@@ -70,36 +92,21 @@ app.use(auth);
 
 
 
-
+//########### ROUTES ##############################
+var index = require('./routes/index');
+var users = require('./routes/users');
 var dishRouter = require('./routes/dishRouter');
 var promoRouter = require('./routes/promoRouter');
 var leaderRouter = require('./routes/leaderRouter');
-
-
-
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
-
-// uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
-app.use(logger('dev'));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser());
-
-
-
-
-
-
-app.use(express.static(path.join(__dirname, 'public')));
-
 app.use('/', index);
 app.use('/users', users);
 app.use('/dishes', dishRouter);
 app.use('/promotions', promoRouter);
 app.use('/leaders', leaderRouter);
+//##################################################
+
+
+
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
