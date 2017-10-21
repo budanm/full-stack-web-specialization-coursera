@@ -4,7 +4,11 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
+var session = require('express-session');
+var FileStore = require('session-file-store')(session);
+var passport = require('passport');
+var authenticate = require('./authenticate');
+var config = require('./config');
 
 
 //###### EXPRESS GENERATED APP #############
@@ -18,9 +22,72 @@ app.set('view engine', 'jade');
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser('12345-67890-09876-54321'));
-app.use(express.static(path.join(__dirname, 'public')));
+
 //##########################################
+
+
+//########### ROUTES ##############################
+var index = require('./routes/index');
+var users = require('./routes/users');
+var dishRouter = require('./routes/dishRouter');
+var promoRouter = require('./routes/promoRouter');
+var leaderRouter = require('./routes/leaderRouter');
+
+
+
+//##################################################
+
+
+//############ AUTHORIZATION #################
+//Using cookies
+//app.use(cookieParser('12345-67890-09876-54321'));
+
+
+//Using sessions
+// app.use(session({
+//   name: 'session-id',
+//   secret: '12345-67890-09876-54321',
+//   saveUninitialized: false,
+//   resave: false,
+//   store: new FileStore()
+// }));
+
+app.use(passport.initialize());
+
+//app.use(passport.session());
+
+
+//Unprotected urls
+app.use('/', index);
+app.use('/users', users);
+
+/*Now only certain routes are needed to be validated using tokens
+and not all of them , once authentication is successful,
+a token will be generated , which will be used to protect the specific end points
+*/
+// function auth(req, res, next) {
+//   console.log(req.session);
+
+//   if (!req.user) {
+//     var err = new Error('You are not authenticated!');
+//     err.status = 403;
+//     return next(err);
+//   }
+//   else {
+
+//     next();
+
+//   }
+// }
+
+
+// app.use(auth);
+
+//Protected urls
+app.use('/dishes', dishRouter);
+app.use('/promotions', promoRouter);
+app.use('/leaders', leaderRouter);
+//###################################################
 
 //############# DB CONNECTION CONFIG ######
 const mongoose = require('mongoose');
@@ -29,7 +96,7 @@ const Dishes = require('./models/dishes');
 const Leaders = require('./models/leaders');
 const Promotions = require('./models/promotions');
 // Connection URL
-const url = 'mongodb://localhost:27017/conFusion';
+const url = config.mongoUrl;
 const connect = mongoose.connect(url, {
   useMongoClient: true,
   /* other options */
@@ -42,72 +109,17 @@ connect.then((db) => {
 //############################################
 
 
-//############ AUTHORIZATION #################
 
-function auth(req, res, next) {
-
-  console.log(req.headers);
-  if (!req.signedCookies.user) {
-    var authHeader = req.headers.authorization;
-
-    if (!authHeader) {
-
-      var err = new Error('You are not authenticated');
-      res.setHeader('WWW-Authenticate', 'Basic');
-      err.status = 401;
-      next(err);
-      return;
-    }
-
-    var auth = new Buffer(authHeader.split(' ')[1], 'base64').toString().split(':');
-
-    var user = auth[0];
-    var pass = auth[1];
-    if (user == 'admin' && pass == 'password') {
-      res.cookie('user', 'admin', { signed: true });
-      next(); // authorized
-    } else {
-      var err = new Error('You are not authenticated!');
-      res.setHeader('WWW-Authenticate', 'Basic');
-      err.status = 401;
-      next(err);
-    }
-  } else {
-
-    console.log(req.signedCookies);
-    if (req.signedCookies.user === 'admin') {
-      next();
-    }
-    else {
-      var err = new Error('You are not authenticated!');
-      err.status = 401;
-      next(err);
-    }
-  }
-
-}
-
-app.use(auth);
-//###################################################
-
-
-
-//########### ROUTES ##############################
-var index = require('./routes/index');
-var users = require('./routes/users');
-var dishRouter = require('./routes/dishRouter');
-var promoRouter = require('./routes/promoRouter');
-var leaderRouter = require('./routes/leaderRouter');
-app.use('/', index);
-app.use('/users', users);
-app.use('/dishes', dishRouter);
-app.use('/promotions', promoRouter);
-app.use('/leaders', leaderRouter);
-//##################################################
+//################### STATIC FILES ################
+app.use(express.static(path.join(__dirname, 'public')));
+//################################################
 
 
 
 
+
+
+//#################### ERROR HANDLING ##################
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   var err = new Error('Not Found');
@@ -125,5 +137,9 @@ app.use(function (err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+//#############################################################
+
+
+
 
 module.exports = app;
