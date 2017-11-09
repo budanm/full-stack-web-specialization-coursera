@@ -1,6 +1,10 @@
 # Full Stack Web and Multiplatform Mobile App Development
 ### The Hong Kong University of Science and Technology
 
+
+* [ Full Stack Web Development Specialization Certificate ]( https://www.coursera.org/account/accomplishments/specialization/UNBP3HD7AV6  )
+
+
 Here I would be uploading all the code for the assignments as part of the Coursera full stack web development specialization
 
 ## Part 1 : HTML CSS AND JAVASCRIPT
@@ -39,4 +43,27 @@ Technologies used
 * Cordova
 * Angular
 * TypeScript
+
+* [ Certificate ]( https://www.coursera.org/account/accomplishments/verify/WFS3NF3ECKXX )
+
+## Part 5 : Multiplatform Mobile App Development with NativeScript
+
+Technologies used
+
+* NativeScript
+* Angular
+* TypeScript
+
+* [ Certificate ]( https://www.coursera.org/account/accomplishments/verify/4HX63Y4NGW6M )
+
+
+## Part 6 : Server-side Development with NodeJS, Express and MongoDB
+
+Technologies used
+
+* Node
+* MongoDB
+* Mongoose
+
+* [ Certificate ]( https://www.coursera.org/account/accomplishments/verify/KQ59JBKRS5UY )
 
